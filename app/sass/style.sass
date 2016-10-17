@@ -1,32 +1,57 @@
-@import fonts.css
-@import "sprites"
+@import "../css/fonts.css"
+@import "mixins/mixins"
 
 .header
 	padding-top: 35px
 
 .container
-	width: 1170px
+	max-width: 1170px
 	padding: 0
 	margin: 0 auto
 
 .container-fluid
 	padding: 0
 
+.logo-b__link
+	min-width: 238px
+	min-height: 93px
+	display: inline-block
+
+.logo-b__ico-purple
+	+sprite(logo-purple)
+
+.logo-b__ico-white
+	+sprite(logo-white)
+
+.logo-b__copyright
+	padding: 10px 0 0 70px
+	font-family: EtelkaReg
+	color: #fff
+
 .service-b
 	font-size: 0
 
 .ico
-	display: inline-block
+	display: inline-block !important
 
 .ico-tel
-	+retina-sprite($tel-group)
+	+sprite(tel)
 
 .ico-magnifier
-	+retina-sprite($magnifier-group)
+	+sprite(magnifier)
+
+.ico-property
+	+sprite(property)
+
+.ico-fifty-fifty
+	+sprite(fifty-fifty)
+
+.ico-percents
+	+sprite(percents)
 
 .ico-calendar
 	margin-right: 10px
-	+retina-sprite($calendar-group)
+	+sprite(calendar)
 
 .tel-b
 	padding: 20px 30px 0 30px
@@ -61,11 +86,10 @@
 	vertical-align: top
 
 .search-b__entry-field-wrap
-	width: 100%
 	position: relative
 
 .search-b__entry-field
-	height: 38px
+	min-height: 38px
 	padding-right: 35px
 	border: 1px solid #3073b6
 	-webkit-border-radius: 10px
@@ -88,19 +112,226 @@
 	vertical-align: top
 
 .menu
+	height: 80px
 	padding: 0
-	margin: 10px 0
+	margin: 0
 	border: none
 	-webkit-border-radius: 0
 	-moz-border-radius: 0
 	border-radius: 0
 	background: none
 
+.menu__panel
+	padding: 0
+
+.menu__item-left
+	min-height: 80px
+	padding: 20px 17px
+	position: relative
+
+	&:before
+		width: 2px
+		height: 56px
+		margin-top: -28px
+		background: #3c84cc
+		border-right: 1px solid #2d6baa
+		position: absolute
+		top: 50%
+		left: 0
+		content: ""
+
+	&:last-child
+		&:after
+			width: 2px
+			height: 56px
+			margin-top: -28px
+			background: #3c84cc
+			border-right: 1px solid #2d6baa
+			position: absolute
+			top: 50%
+			right: 0
+			content: ""
+
+.menu__list-right
+	margin: 0
+
+.menu__item-right
+	padding: 20px 20px
+	position: relative
+
+	&:before
+		width: 270px
+		height: 90px
+		margin-top: -45px
+		background: #37329d
+		position: absolute
+		top: 50%
+		right: 0
+		content: ""
+
+.menu__link
+	padding: 0 !important
+	font-family: EtelkaReg
+	font-size: 17px
+	font-weight: normal !important
+	line-height: 38px !important
+	color: #fff !important
+
+	&:hover
+		color: #371794 !important
+
+	&_left-big
+		line-height: 20px !important
+
+	&_right
+		font-size: 20px
+		position: relative
+
+		&:hover
+			color: #839fcc !important
+
+.menu__ico
+	width: 30px
+	height: 30px
+	margin-right: 15px
+	display: inline-block !important
+	vertical-align: middle
+
+.menu__ico-home
+	+sprite(home)
+
+.menu__ico-doc
+	+sprite(doc)
+
+.menu__ico-man
+	+sprite(man)
+
+.menu__ico-mail
+	+sprite(mail)
+
+.menu__ico-tablet-folder
+	+sprite(tablet-folder)
+
+.menu__text
+	display: inline-block
+	vertical-align: middle
+	text-decoration: underline
+
 .achievement-b
 	width: 154px
 	height: 90px
+	padding: 5px 10px
 	background: linear-gradient(to bottom, #ffffff, #cee0f2)
 	border: 3px solid #3073b6
+	text-align: center
+	color: #3073b6
+
+.slider-b
+	.owl-theme
+		padding: 70px 0 10px 0
+
+		.owl-carousel__item
+			padding: 0 110px
+
+		.owl-nav
+			margin: 0
+
+			div
+				margin: 0
+				background: none
+				font-size: 0
+
+				&:hover
+					border-color: #393185
+					background: none
+
+				.disabled
+					background: none
+
+			.owl-prev
+				width: 60px
+				height: 60px
+				margin-top: -40px
+				border-right: 5px solid #909090
+				border-bottom: 5px solid #909090
+				position: absolute
+				top: 50%
+				left: 11px
+				transform: rotate(135deg)
+
+			.owl-next
+				width: 60px
+				height: 60px
+				margin-top: -40px
+				border-right: 5px solid #909090
+				border-bottom: 5px solid #909090
+				position: absolute
+				top: 50%
+				right: 11px
+				transform: rotate(-45deg)
+
+		.owl-dots
+			height: 0
+			display: block
+			overflow: hidden
+
+.slider-b__row
+	padding-top: 30px
+
+.slider-b__list
+	padding: 0
+	margin: 0
+	display: inline-block
+	list-style: none
+
+.slider-b__item
+	padding-right: 100px
+	display: inline-block
+	position: relative
+	font-family: FRADM
+	font-size: 60px
+	line-height: 60px
+	color: #cee0f2
+
+	&_left
+		&:last-child
+			padding-right: 30px
+
+	&_right
+		&:last-child
+			padding-right: 60px
+
+.slider-b__small-text
+	display: inline-block
+	position: absolute
+	top: 50%
+	margin-top: -8px
+	font-family: EtelkaReg
+	font-size: 15px
+	line-height: 16px
+
+.slider-b__ico-arrow-right
+	position: absolute
+	top: 50%
+	right: 25px
+	transform: translateY(-50%)
+	+sprite(arrow-right)
+
+.slider-b__link
+	display: inline-block
+	padding-top: 10px
+	margin-right: 30px
+	border-bottom: 2px solid #3073b6
+	vertical-align: top
+	font-family: EtelkaReg
+	font-size: 30px
+	line-height: 36px
+	color: #3073b6
+	cursor: pointer
+
+.imp-b
+	padding-top: 35px
+	padding-bottom: 50px
 
 .subscribe-b
 	width: 400px
@@ -108,15 +339,98 @@
 
 .subscribe-b__entry-field
 	width: 210px
-	height: 38px
+	height: 37px
+	margin-right: 10px
 	display: inline-block
+	-webkit-border-radius: 10px
+	-moz-border-radius: 10px
+	border-radius: 10px
+
+.section
+	padding-top: 40px
+	padding-bottom: 35px
+
+.nav-b__list
+	padding: 15px 0 0 0
+	margin: 0
+	list-style: none
+	font-size: 0
+
+.nav-b__item
+	padding-right: 20px
+	display: inline-block
+	vertical-align: top
+	position: relative
+
+	&:after
+		position: absolute
+		top: 50%
+		right: 8px
+		font-size: 13px
+		line-height: 1px
+		content: "-"
+
+	&:last-child
+		padding-right: 0
+
+		&:after
+			content: ""
+
+.nav-b__link
+	display: inline-block
+	font-family: EtelkaReg
+	font-size: 13px
+	line-height: 16px
+	color: #37329d
+	text-decoration: underline
+	+trans()
+
+	&:hover
+		color: #3073b6
+
+.filter-b
+	padding-top: 15px
+	border-top: 1px solid #aaaaaa
+
+.filter-b__list
+	width: 100%
+	padding: 0
+	margin: 0
+	list-style: none
+
+.filter-b__item
+	margin-right: 40px
+	display: inline-block
+	vertical-align: top
+
+.filter-b__link
+	text-decoration: underline
+	font-family: EtelkaReg
+	font-size: 16px
+	color: #37329d
+
+
+.catalog-b__item
+	padding: 15px
+	border: 1px solid #cccccc
+
+.catalog-b__link
+	display: block
+
+.catalog-b__text-box
+	padding: 0 5px
 
 .footer
-	padding: 40px 0 50px 0
+	padding: 35px 0 45px 0
 	background: #37329d
 
+.footer__list
+	padding: 25px 0 0 0
+	margin: 0
+	list-style: none
+
 .soc-b
-	padding: 0
+	padding: 60px 0 0 0
 	list-style: none
 	font-size: 0
 
@@ -124,80 +438,149 @@
 	display: inline-block
 
 .soc-b__link
-	width: 32px
-	height: 32px
+	min-width: 32px
+	min-height: 32px
 	margin-right: 5px
-	background: #3073b6
-	position: relative
-	-webkit-border-radius: 5px
-	-moz-border-radius: 5px
-	border-radius: 5px
 	display: block
-	transition: 0.5s ease 0s
-
-	&:hover
-		background: #295b8e
-
-.soc-b__ico
-	display: inline-block
-	position: absolute
-	top: 50%
-	left: 50%
-	transform: translate(-50%, -50%)
 
 .soc-b__ico-instagram
-	+retina-sprite($instagram-group)
+	+sprite(instagram)
 
 .soc-b__ico-vk
-	+retina-sprite($vk-group)
+	+sprite(vk)
 
 .soc-b__ico-classmates
-	+retina-sprite($classmates-group)
+	+sprite(classmates)
 
 .soc-b__ico-mail-ru
-	+retina-sprite($mail-ru-group)
+	+sprite(mail-ru)
 
 .soc-b__ico-f
-	display: inline-block
-	position: absolute
-	top: auto
-	left: auto
-	bottom: 0
-	right: 5px
-	transform: translate(0, 0)
-	+retina-sprite($f-group)
+	+sprite(f)
 
 .soc-b__ico-twitter
-	+retina-sprite($twitter-group)
+	+sprite(twitter)
 
 .soc-b__ico-g-plus
-	+retina-sprite($g-plus-group)
+	+sprite(g-plus)
 
 
 
 
 
+.mb-0
+	margin-bottom: 0
 
-
+.mb-5
+	margin-bottom: 5px
 
 .mb-10
 	margin-bottom: 10px
 
 .mb-15
-	margin-bottom: 15px
+	margin-bottom: 15px !important
 
 .mb-20
-	margin-bottom: 15px
+	margin-bottom: 20px
+
+.mb-25
+	margin-bottom: 25px !important
+
+.mb-30
+	margin-bottom: 30px
 
 .mb-35
 	margin-bottom: 35px
 
+.mb-40
+	margin-bottom: 40px !important
+
+.mb-45
+	margin-bottom: 45px
+
+.mb-50
+	margin-bottom: 50px
+
+.mb-55
+	margin-bottom: 55px
+
+.p-0
+	padding: 0
+
+.ptb-20
+	padding-top: 20px
+	padding-bottom: 20px
+
+.plr-50
+	padding-left: 50px
+	padding-right: 50px
+
+.text-purple
+	color: #37329d
+
+.text-white
+	color: #fff
+
+.text-bold
+	font-family: EtelkaBol !important
+
+.text-big
+	font-size: 25px
+	line-height: 37px
+
+.text-very-big
+	font-size: 30px
+	line-height: 36px
+
+.text-small
+	font-family: EtelkaReg
+	font-size: 12px
+
+.text-middle
+	font-family: EtelkaReg
+	font-size: 15px
+	line-height: 18px
+
+.h2
+	margin: 0
+	font-family: EtelkaReg
+	font-size: 45px
+
+	&_small
+		font-size: 35px
+
+.h5
+	margin: 0 0 20px 0
+	font-family: EtelkaBol
+	font-size: 20px
+	line-height: 24px
+
+.h6
+	margin: 0 0 20px 0
+	font-family: EtelkaBol
+	font-size: 15px
+	line-height: 18px
+
+.list-content
+	padding-left: 20px
+	margin-bottom: 20px
+	list-style: none
+
+	& > li
+		position: relative
+
+		&:before
+			content: "-"
+			position: absolute
+			top: 0
+			left: -10px
+
 .link
-	display: block
 	text-decoration: underline
 	transition: 0.5s ease 0s
 
 	&_blue
+		display: block
 		color: #3072b6
 
 		&-small-bol
@@ -225,8 +608,90 @@
 		&:hover
 			color: #37329d
 
-.text-purple
-		color: #37329d
+	&_white
+		display: inline-block
+		font-family: EtelkaReg
+		font-size: 15px
+		color: #fff
+
+		&-tel
+			text-decoration: none
+
+button.btn,
+a.btn
+	padding: 0 10px
+	display: inline-block
+	vertical-align: top
+	font-family: EtelkaReg
+	font-size: 20px
+	color: #fff
+
+	&_square
+		width: 370px
+		line-height: 50px
+		-webkit-border-radius: 0
+		-moz-border-radius: 0
+		border-radius: 0
+
+	&_br
+		width: 170px
+		line-height: 35px
+		-webkit-border-radius: 10px
+		-moz-border-radius: 10px
+		border-radius: 10px
+
+	&_purple
+		background: #37329d
+
+		&:hover,
+		&:focus
+			background: #3e39ac
+			color: #fff
+
+		&:active
+			background: #302c89
+			color: #fff
+
+		&:visited
+			background: #37329d
+
+			&:hover,
+			&:focus
+				background: #3e39ac
+				color: #fff
+
+			&:active
+				background: #302c89
+				color: #fff
+
+	&_blue
+		background: #3073b6
+
+		&:hover,
+		&:focus
+			background: #3581cd
+			color: #fff
+
+		&:active
+			background: #2b639b
+			color: #fff
+
+		&:visited
+			background: #3073b6
+
+			&:hover,
+			&:focus
+				background: #3581cd
+				color: #fff
+
+			&:active
+				background: #2b639b
+				color: #fff
+
+.img-increasing
+	width: 100%
+	max-width: 590px
+	height: auto
 
 .line-vertical-gray
 	position: relative
@@ -245,4 +710,5 @@
 
 .light-blue
 	width: 100%
+	padding: 30px 0
 	background: #cee0f2

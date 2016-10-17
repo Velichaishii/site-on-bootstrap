@@ -14,7 +14,8 @@ var gulp         = require('gulp'),
     callback     = require('gulp-callback'),
     clean        = require('gulp-clean'),
     notify       = require('gulp-notify'),
-    browserSync  = require('browser-sync');
+    browserSync  = require('browser-sync'),
+    compass      = require('gulp-compass');
 
 /* PRODUCTION PLUGINS ----------------------------------------------------------
  ---------------------------------------------------------------------------- */
@@ -113,14 +114,27 @@ gulp.task('twig', function () {
     return null;
 });
 
+/* COMPASS ------------------------------------------------------------------ */
+gulp.task('compass', function () {
+    gulp.src(sources.sass.watch)
+        .pipe(plumber({
+            errorHandler: onError
+        }))
+        .pipe(compass({
+            sass: sources.sass.dist,
+            css: sources.css.dist,
+            js: sources.js.dist,
+            image: sources.images.dist
+        }))
+        .pipe(gulp.dest(sources.css.dist))
+        .pipe(browserSync.reload({stream: true}));
+});
+
 /* SPRITES ------------------------------------------------------------------ */
 gulp.task('sprite', function() {
     var spriteData;
 
     spriteData = gulp.src(sources.images.icons.default)
-        .pipe(plumber({
-            errorHandler: onError
-        }))
         .pipe(spritesmith({
             retinaSrcFilter: sources.images.icons.retina,
             retinaImgName: '../images/sprite@2x.png',
@@ -204,11 +218,11 @@ gulp.task('build',["clean"], function(){
  ---------------------------------------------------------------------------- */
 gulp.task('watch', function () {
     // gulp.watch('bower.json', ["bower"]);
-    gulp.watch(sources.sass.watch, ['sass']);
+    gulp.watch(sources.sass.watch, ['compass']);
     // gulp.watch(sources.pug.watch, ["pug"]);
     gulp.watch(sources.twig.watch, ["twig"]);
-    gulp.watch(sources.images.icons.default, ["sass"]);
+    gulp.watch(sources.images.icons.default, ["compass"]);
     gulp.watch(sources.js.watch).on('change', browserSync.reload);
 });
 
-gulp.task('default', ['browser-sync', 'twig', 'sass', 'watch']);
+gulp.task('default', ['browser-sync', 'twig', 'compass', 'watch']);
