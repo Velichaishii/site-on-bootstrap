@@ -1,13 +1,15 @@
 @import "../css/fonts.css"
 @import "mixins/mixins"
+@import "style-tablet"
+@import "style-mobile"
 
 .header
 	padding-top: 35px
 
 .container
-	max-width: 1170px
-	padding: 0
-	margin: 0 auto
+	max-width: 1200px
+	min-width: 320px
+	width: 100%
 
 .container-fluid
 	padding: 0
@@ -16,6 +18,7 @@
 	min-width: 238px
 	min-height: 93px
 	display: inline-block
+	font-size: 0
 
 .logo-b__ico-purple
 	+sprite(logo-purple)
@@ -107,7 +110,8 @@
 	right: 10px
 
 .links-b
-	padding: 10px 25px 0 35px
+	max-width: 220px
+	padding: 10px 0 0 35px
 	display: inline-block
 	vertical-align: top
 
@@ -350,13 +354,13 @@
 	padding-top: 40px
 	padding-bottom: 35px
 
-.nav-b__list
+.way-b__list
 	padding: 15px 0 0 0
 	margin: 0
 	list-style: none
 	font-size: 0
 
-.nav-b__item
+.way-b__item
 	padding-right: 20px
 	display: inline-block
 	vertical-align: top
@@ -376,7 +380,7 @@
 		&:after
 			content: ""
 
-.nav-b__link
+.way-b__link
 	display: inline-block
 	font-family: EtelkaReg
 	font-size: 13px
@@ -437,26 +441,55 @@
 	font-size: 20px
 	color: #37329d
 
+.charact-table
+	width: 100%
+	margin-bottom: 45px
+	font-family: EtelkaReg
+	font-size: 15px
+
+.charact-table__sell
+	padding: 10px 0
+
+	&_left
+		padding-right: 10px
+
+	&_last
+		padding-bottom: 40px
+
+.charact-table__row-border
+	border-top: 1px solid #aaaaaa
+	border-bottom: 1px solid #aaaaaa
+
+.photo-b__bottom-b
+	margin-left: -5px
+	margin-right: -5px
+
+.photo-b__link-wrap
+	padding: 0 5px 10px 5px
+
 .photo-b__img-link
+	width: 100%
 	border: 1px solid #cccccc
+	display: block
 	overflow: hidden
 
 	&_main
-		width: 100%
-		display: block
+		margin-bottom: 10px
 
-	&_second
-		width: 33.33%
-		display: inline-block
-
-.photo-b__img-main
+.photo-b__img
 	width: 100%
 	height: auto
+	font-size: 0
+
+.photo-b__img-second-b
+	width: 100%
+	font-size: 0
 
 .contacts-info-b
-	min-width: 270px
-	padding: 20px 15px
+	width: 100%
+	padding: 20px
 	background: #3073b6
+	word-wrap: break-word
 
 .footer
 	padding: 35px 0 45px 0
@@ -507,7 +540,7 @@
 
 
 .mb-0
-	margin-bottom: 0
+	margin-bottom: 0 !important
 
 .mb-5
 	margin-bottom: 5px
@@ -522,7 +555,7 @@
 	margin-bottom: 20px
 
 .mb-25
-	margin-bottom: 25px !important
+	margin-bottom: 25px
 
 .mb-30
 	margin-bottom: 30px
@@ -543,7 +576,7 @@
 	margin-bottom: 55px
 
 .mb-65
-	margin-bottom: 65px
+	margin-bottom: 65px !important
 
 .p-0
 	padding: 0
@@ -551,6 +584,10 @@
 .ptb-20
 	padding-top: 20px
 	padding-bottom: 20px
+
+.plr-10
+	padding-left: 10px
+	padding-right: 10px
 
 .plr-50
 	padding-left: 50px
@@ -567,6 +604,10 @@
 
 .text-bold
 	font-family: EtelkaBol !important
+
+.text-min-big
+	font-size: 20px
+	line-height: 24px
 
 .text-big
 	font-size: 25px
@@ -592,6 +633,17 @@
 
 	&_small
 		font-size: 35px
+
+.h3
+	margin-top: 0
+	font-family: EtelkaBol
+	font-size: 25px
+	line-height: 30px
+
+.h4
+	margin-bottom: 15px
+	font-family: EtelkaBol
+	font-size: 20px
 
 .h5
 	margin: 0 0 20px 0
@@ -677,6 +729,14 @@ a.btn
 		-moz-border-radius: 0
 		border-radius: 0
 
+		&-small
+			width: 100%
+			padding: 15px
+			font-family: EtelkaBol
+			font-size: 15px
+			line-height: 18px
+			white-space: pre-wrap
+
 	&_br
 		width: 170px
 		line-height: 35px
@@ -747,6 +807,11 @@ a.btn
 		top: 0
 		left: 0
 		content: ""
+
+.line-gorizontal-gray
+	padding-bottom: 30px
+	margin-bottom: 35px
+	border-bottom: 1px solid #aaaaaa
 
 .blue
 	width: 100%

@@ -1,0 +1,22 @@
+@media screen and (max-width: 992px) {
+  .logo-b {
+    padding-bottom: 15px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 889px) {
+  .service-b .tel-b + .line-vertical-gray:before {
+    height: 177px;
+  }
+}
+@media screen and (max-width: 683px) {
+  .service-b .tel-b + .line-vertical-gray:before {
+    height: 95px;
+  }
+}
+@media screen and (max-width: 531px) {
+  .search-b {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

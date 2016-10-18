@@ -1,30 +1,125 @@
 {% extends "layouts/app.twig" %}
 
 {% block content %}
-    <section class="nav-b">
+    <section class="way-b">
         <div class="container">
-            <ul class="nav-b__list">
-                <li class="nav-b__item"><a class="nav-b__link" href="#">Главная</a></li>
-                <li class="nav-b__item"><a class="nav-b__link" href="#">Все лоты</a></li>
-                <li class="nav-b__item"><a class="nav-b__link" href="#">Mercedes-Benz GL 450 2007 г.</a></li>
+            <ul class="way-b__list">
+                <li class="way-b__item"><a class="way-b__link" href="#">Главная</a></li>
+                <li class="way-b__item"><a class="way-b__link" href="#">Все лоты</a></li>
+                <li class="way-b__item"><a class="way-b__link" href="#">Mercedes-Benz GL 450 2007 г.</a></li>
             </ul>
         </div>
     </section>
-    <section class="section pb-170">
+    <section class="section">
         <div class="container">
-            <h2 class="h2 text-purple text-center mb-65">Mercedes-Benz GL 450 2007 г. </h2>
+            <div class="line-gorizontal-gray">
+                <h2 class="h2 text-purple text-center">Mercedes-Benz GL 450 2007 г. </h2>
+            </div>
             <div class="row">
-                <div class="col-lg-4"></div>
-                <div class="col-lg-5 photo-b">
-                    <a class="photo-b__img-link photo-b__img-link_main" href="#">
-                        <img class="photo-b__img-main" src="images/mersedes-benz-gl-450.jpg">
-                    </a>
-                    <a class="photo-b__img-link photo-b__img-link_second" href="#">
-                        <img class="photo-b__img-main" src="images/mersedes-benz-gl-450.jpg">
-                    </a>
+                <div class="col-md-4 col-sm-12">
+                    <table class="charact-table">
+                        <tbody>
+                        <tr>
+                            <td class="charact-table__sell charact-table__sell_left" valign="middle">Код лота:</td>
+                            <td class="charact-table__sell text-bold" valign="middle">LAVTO_0000280</td>
+                        </tr>
+                        <tr>
+                            <td class="charact-table__sell charact-table__sell_left" valign="middle">Цена за обязательство:</td>
+                            <td class="charact-table__sell text-bold text-min-big text-purple" valign="middle">3 006 000.00 KZT</td>
+                        </tr>
+                        <tr>
+                            <td class="charact-table__sell charact-table__sell_left" valign="middle">Вознаграждение:</td>
+                            <td class="charact-table__sell text-bold" valign="middle">2%</td>
+                        </tr>
+                        <tr>
+                            <td class="charact-table__sell charact-table__sell_left" valign="middle">Ежемесячный доход:</td>
+                            <td class="charact-table__sell text-bold text-purple" valign="middle">60 120 тг.</td>
+                        </tr>
+                        <tr>
+                            <td class="charact-table__sell charact-table__sell_left" valign="middle">Дата заключения договора займа: </td>
+                            <td class="charact-table__sell" valign="middle">03.03.2016 </td>
+                        </tr>
+                        <tr>
+                            <td class="charact-table__sell charact-table__sell_left charact-table__sell_last" valign="middle">Дата завершения договора займа:</td>
+                            <td class="charact-table__sell charact-table__sell_last" valign="middle">31.12.2017</td>
+                        </tr>
+                        <tr class="charact-table__row-border">
+                            <td class="charact-table__sell charact-table__sell_left" valign="middle">Место регистрации:</td>
+                            <td class="charact-table__sell text-bold" valign="middle">Алматы</td>
+                        </tr>
+                        <tr class="charact-table__row-border">
+                            <td class="charact-table__sell charact-table__sell_left" valign="middle">Место нахождения:</td>
+                            <td class="charact-table__sell text-bold" valign="middle">Алматы</td>
+                        </tr>
+                        <tr>
+                            <td class="charact-table__sell charact-table__sell_left" valign="middle">Марка и модель:</td>
+                            <td class="charact-table__sell text-bold" valign="middle">Mercedes-Benz GL 450</td>
+                        </tr>
+                        <tr class="charact-table__row-border">
+                            <td class="charact-table__sell charact-table__sell_left" valign="middle">Место происхождения:</td>
+                            <td class="charact-table__sell text-bold" valign="middle">Европеец</td>
+                        </tr>
+                        <tr class="charact-table__row-border">
+                            <td class="charact-table__sell charact-table__sell_left" valign="middle">Год выпуска:</td>
+                            <td class="charact-table__sell text-bold" valign="middle">2007</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div>
+                        <h4 class="h4">ОПИСАНИЕ ЛОТА</h4>
+                        <p class="text-middle mb-20">Авто в хорошем состоянии.</p>
+                        <h6 class="h6 mb-0">Текущая кредитная история</h6>
+                        <p class="text-middle mb-20">Оплачен по сентябрь 2016.</p>
+                        <h6 class="h6 mb-0">Недостатки и/или повреждения:</h6>
+                        <p class="text-middle mb-20">По кузову наблюдаются незначительные, косметические царапины. Состояние хорошее.</p>
+                    </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="contacts-info-b"></div>
+                <div class="col-md-5 col-sm-6 photo-b mb-25">
+                    <a class="photo-b__img-link photo-b__img-link_main" href="#">
+                        <img class="photo-b__img" src="images/mersedes-benz-gl-450.jpg">
+                    </a>
+                    <div class="row photo-b__bottom-b">
+                        <div class="col-sm-4 col-xs-6 photo-b__link-wrap">
+                            <a class="photo-b__img-link" href="#">
+                                <img class="photo-b__img" src="images/mersedes-benz-gl-450.jpg">
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 photo-b__link-wrap">
+                            <a class="photo-b__img-link" href="#">
+                                <img class="photo-b__img" src="images/mersedes-benz-gl-450.jpg">
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 photo-b__link-wrap">
+                            <a class="photo-b__img-link" href="#">
+                                <img class="photo-b__img" src="images/mersedes-benz-gl-450.jpg">
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 photo-b__link-wrap">
+                            <a class="photo-b__img-link" href="#">
+                                <img class="photo-b__img" src="images/mersedes-benz-gl-450.jpg">
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 photo-b__link-wrap">
+                            <a class="photo-b__img-link" href="#">
+                                <img class="photo-b__img" src="images/mersedes-benz-gl-450.jpg">
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 photo-b__link-wrap">
+                            <a class="photo-b__img-link" href="#">
+                                <img class="photo-b__img" src="images/mersedes-benz-gl-450.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="contacts-info-b">
+                        <h3 class="h3 text-white mb-40">Контактная информация</h3>
+                        <p class="text-middle text-white mb-20">Доступно зарегистрированным пользователям.</p>
+                        <p class="text-middle text-white mb-20">Стоимость доступа: <span class="text-bold">9019.00 тг</span></p>
+                        <div class="plr-10">
+                            <a class="btn btn_purple btn_square btn_square-small">ПОЛУЧИТЬ ДОСТУП</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

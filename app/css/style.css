@@ -1,12 +1,34 @@
 @import url(../css/fonts.css);
+@media screen and (max-width: 992px) {
+  .logo-b {
+    padding-bottom: 15px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 889px) {
+  .service-b .tel-b + .line-vertical-gray:before {
+    height: 177px;
+  }
+}
+@media screen and (max-width: 683px) {
+  .service-b .tel-b + .line-vertical-gray:before {
+    height: 95px;
+  }
+}
+@media screen and (max-width: 531px) {
+  .search-b {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
 .header {
   padding-top: 35px;
 }
 
 .container {
-  max-width: 1170px;
-  padding: 0;
-  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 320px;
+  width: 100%;
 }
 
 .container-fluid {
@@ -17,6 +39,7 @@
   min-width: 238px;
   min-height: 93px;
   display: inline-block;
+  font-size: 0;
 }
 
 .logo-b__ico-purple {
@@ -248,7 +271,8 @@
 }
 
 .links-b {
-  padding: 10px 25px 0 35px;
+  max-width: 220px;
+  padding: 10px 0 0 35px;
   display: inline-block;
   vertical-align: top;
 }
@@ -603,20 +627,20 @@
   padding-bottom: 35px;
 }
 
-.nav-b__list {
+.way-b__list {
   padding: 15px 0 0 0;
   margin: 0;
   list-style: none;
   font-size: 0;
 }
 
-.nav-b__item {
+.way-b__item {
   padding-right: 20px;
   display: inline-block;
   vertical-align: top;
   position: relative;
 }
-.nav-b__item:after {
+.way-b__item:after {
   position: absolute;
   top: 50%;
   right: 8px;
@@ -624,14 +648,14 @@
   line-height: 1px;
   content: "-";
 }
-.nav-b__item:last-child {
+.way-b__item:last-child {
   padding-right: 0;
 }
-.nav-b__item:last-child:after {
+.way-b__item:last-child:after {
   content: "";
 }
 
-.nav-b__link {
+.way-b__link {
   display: inline-block;
   font-family: EtelkaReg;
   font-size: 13px;
@@ -644,7 +668,7 @@
   -o-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
 }
-.nav-b__link:hover {
+.way-b__link:hover {
   color: #3073b6;
 }
 
@@ -705,28 +729,63 @@
   color: #37329d;
 }
 
+.charact-table {
+  width: 100%;
+  margin-bottom: 45px;
+  font-family: EtelkaReg;
+  font-size: 15px;
+}
+
+.charact-table__sell {
+  padding: 10px 0;
+}
+.charact-table__sell_left {
+  padding-right: 10px;
+}
+.charact-table__sell_last {
+  padding-bottom: 40px;
+}
+
+.charact-table__row-border {
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.photo-b__bottom-b {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.photo-b__link-wrap {
+  padding: 0 5px 10px 5px;
+}
+
 .photo-b__img-link {
+  width: 100%;
   border: 1px solid #cccccc;
+  display: block;
   overflow: hidden;
 }
 .photo-b__img-link_main {
-  width: 100%;
-  display: block;
-}
-.photo-b__img-link_second {
-  width: 33.33%;
-  display: inline-block;
+  margin-bottom: 10px;
 }
 
-.photo-b__img-main {
+.photo-b__img {
   width: 100%;
   height: auto;
+  font-size: 0;
+}
+
+.photo-b__img-second-b {
+  width: 100%;
+  font-size: 0;
 }
 
 .contacts-info-b {
-  min-width: 270px;
-  padding: 20px 15px;
+  width: 100%;
+  padding: 20px;
   background: #3073b6;
+  word-wrap: break-word;
 }
 
 .footer {
@@ -891,7 +950,7 @@
 }
 
 .mb-0 {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .mb-5 {
@@ -911,7 +970,7 @@
 }
 
 .mb-25 {
-  margin-bottom: 25px !important;
+  margin-bottom: 25px;
 }
 
 .mb-30 {
@@ -939,7 +998,7 @@
 }
 
 .mb-65 {
-  margin-bottom: 65px;
+  margin-bottom: 65px !important;
 }
 
 .p-0 {
@@ -949,6 +1008,11 @@
 .ptb-20 {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.plr-10 {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .plr-50 {
@@ -970,6 +1034,11 @@
 
 .text-bold {
   font-family: EtelkaBol !important;
+}
+
+.text-min-big {
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .text-big {
@@ -1000,6 +1069,19 @@
 }
 .h2_small {
   font-size: 35px;
+}
+
+.h3 {
+  margin-top: 0;
+  font-family: EtelkaBol;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.h4 {
+  margin-bottom: 15px;
+  font-family: EtelkaBol;
+  font-size: 20px;
 }
 
 .h5 {
@@ -1090,6 +1172,15 @@ a.btn_square {
   -moz-border-radius: 0;
   border-radius: 0;
 }
+button.btn_square-small,
+a.btn_square-small {
+  width: 100%;
+  padding: 15px;
+  font-family: EtelkaBol;
+  font-size: 15px;
+  line-height: 18px;
+  white-space: pre-wrap;
+}
 button.btn_br,
 a.btn_br {
   width: 170px;
@@ -1175,6 +1266,12 @@ a.btn_blue:visited:active {
   top: 0;
   left: 0;
   content: "";
+}
+
+.line-gorizontal-gray {
+  padding-bottom: 30px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid #aaaaaa;
 }
 
 .blue {
