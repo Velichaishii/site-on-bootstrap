@@ -1,10 +1,10 @@
 <header class="header">
     <div class="container mb-35">
         <div class="row">
-            <div class="col-lg-3 col-md-4 col-xs-12 logo-b">
+            <div class="col-lg-3 col-md-4 col-sm-8 col-xs-12 logo-b">
                 <a class="logo-b__link" href="#"><i class="ico logo-b__ico-purple"></i></a>
             </div>
-            <div class="col-lg-9 col-md-8 col-xs-12 service-b">
+            <div class="col-lg-9 col-md-8 col-sm-4 hidden-xs service-b">
                 <div class="tel-b line-vertical-gray">
                     <div class="tel-b__ico-wrap">
                         <i class="ico ico-tel"></i>
@@ -14,7 +14,7 @@
                         <a class="link link_blue link_blue-medium-reg" href="#">Заказать звонок</a>
                     </div>
                 </div>
-                <div class="search-b hidden-md line-vertical-gray">
+                <div class="hidden-md hidden-sm hidden-xs line-vertical-gray search-b">
                     <a class="link link_blue link_blue-medium-reg mb-15" href="#">Вопрос юристу</a>
                     <form>
                         <div class="search-b__entry-field-wrap">
@@ -31,66 +31,60 @@
             </div>
         </div>
     </div>
-    <section class="blue">
+    <nav class="navbar navbar-default menu">
         <div class="container">
-            <nav class="navbar navbar-default menu" role="navigation">
-                <div class="container-fluid">
-
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <nav class="collapse navbar-collapse menu__panel" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav menu__list-left">
-                            <li class="menu__item-left">
-                                <a class="menu__link" href="#">
-                                    <i class="menu__ico menu__ico-home"></i>
-                                    <span class="menu__text">Главная</span>
-                                </a>
-                            </li>
-                            <li class="menu__item-left">
-                                <a class="menu__link menu__link_left-big" href="#">
-                                    <i class="menu__ico menu__ico-doc"></i>
-                                    <span class="menu__text">Правила и<br>термины БИРЖИ</span>
-                                </a>
-                            </li>
-                            <li class="menu__item-left">
-                                <a class="menu__link" href="#">
-                                    <i class="menu__ico menu__ico-man"></i>
-                                    <span class="menu__text">Продавцу</span>
-                                </a>
-                            </li>
-                            <li class="menu__item-left">
-                                <a class="menu__link" href="#">
-                                    <i class="menu__ico menu__ico-man"></i>
-                                    <span class="menu__text">Покупателю</span>
-                                </a>
-                            </li>
-                            <li class="menu__item-left">
-                                <a class="menu__link" href="#">
-                                    <i class="menu__ico menu__ico-mail"></i>
-                                    <span class="menu__text">Контакты</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right menu__list-right">
-                            <li class="menu__item-right">
-                                <a class="menu__link menu__link_right" href="#">
-                                    <i class="menu__ico menu__ico-tablet-folder"></i>
-                                    <span class="menu__text">Просмотреть лоты</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav><!-- /.navbar-collapse -->
-                </div><!-- /.container-fluid -->
-            </nav>
+            <div class="row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="menu__item-left">
+                            <a class="menu__link" href="#">
+                                <span class="menu__ico-wrap"><i class="menu__ico menu__ico-home"></i></span>
+                                <span class="menu__text">Главная</span>
+                            </a>
+                        </li>
+                        <li class="menu__item-left">
+                            <a class="menu__link" href="#">
+                                <span class="menu__ico-wrap"><i class="menu__ico menu__ico-doc"></i></span>
+                                <span class="menu__text menu__text_small">Правила и термины БИРЖИ</span>
+                            </a>
+                        </li>
+                        <li class="menu__item-left">
+                            <a class="menu__link" href="#">
+                                <span class="menu__ico-wrap"><i class="menu__ico menu__ico-man"></i></span>
+                                <span class="menu__text">Продавцу</span>
+                            </a>
+                        </li>
+                        <li class="menu__item-left">
+                            <a class="menu__link" href="#">
+                                <span class="menu__ico-wrap"><i class="menu__ico menu__ico-man"></i></span>
+                                <span class="menu__text">Покупателю</span>
+                            </a>
+                        </li>
+                        <li class="menu__item-left">
+                            <a class="menu__link" href="#">
+                                <span class="menu__ico-wrap"><i class="menu__ico menu__ico-mail"></i></span>
+                                <span class="menu__text">Контакты</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right menu__list-right">
+                        <li class="menu__item-right">
+                            <a class="menu__link menu__link_right" href="#">
+                                <span class="menu__ico-wrap"><i class="menu__ico menu__ico-tablet-folder"></i></span>
+                                <span class="menu__text">Просмотреть лоты</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </section>
+    </nav>
 </header>
