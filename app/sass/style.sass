@@ -34,7 +34,7 @@
 	font-size: 0
 
 .ico
-	display: inline-block !important
+	display: inline-block
 
 .ico-tel
 	+sprite(tel)
@@ -159,6 +159,7 @@
 				font-weight: normal
 				line-height: 38px
 				color: #fff
+				+trans()
 
 				&:hover
 					color: #371794
@@ -200,7 +201,7 @@
 	padding: 20px
 	position: absolute
 	top: 0
-	right: 0
+	right: 15px
 	z-index: 10
 
 	&:before
@@ -220,6 +221,7 @@
 	position: relative
 	font-size: 20px
 	color: #fff
+	+trans()
 
 	&:hover
 		color: #839fcc
@@ -272,6 +274,9 @@
 
 	&_big
 		line-height: 40px
+
+.achievement-b-wrap
+	padding: 0 20px
 
 .achievement-b
 	width: 154px
@@ -329,6 +334,15 @@
 			display: block
 			overflow: hidden
 
+.slider-b__steps
+	margin-bottom: 20px
+	border-bottom: 2px solid #3073b6
+	font-family: EtelkaReg
+	font-size: 30px
+	line-height: 36px
+	color: #3073b6
+	display: none
+
 .slider-b__row
 	padding-top: 30px
 	margin-bottom: 70px
@@ -337,10 +351,10 @@
 	padding: 0
 	margin: 0
 	display: inline-block
+	font-size: 0
 	list-style: none
 
 .slider-b__item
-	padding-right: 70px
 	display: inline-block
 	position: relative
 	font-family: FRADM
@@ -349,17 +363,31 @@
 	color: #cee0f2
 
 	&_left
+		padding-right: 70px
+
 		&:last-child
-			padding-right: 30px
+			padding-right: 0
 
 	&_right
+		padding-right: 40px
+
 		&:last-child
-			padding-right: 60px
+			padding-right: 0
 
 .slider-b__control
-	min-width: 65px
-	display: block
+	display: inline-block
 	position: relative
+	cursor: pointer
+	+trans()
+
+	&_left
+		width: 65px
+
+	&_right
+		width: 100px
+
+	&:hover
+		color: #37329d
 
 .slider-b__small-text
 	display: inline-block
@@ -371,12 +399,12 @@
 	line-height: 16px
 
 	&_first
-		right: 8px
+		margin-left: -8px
 
 .slider-b__ico-arrow-right
 	position: absolute
 	top: 50%
-	right: 25px
+	right: 20%
 	transform: translateY(-50%)
 	+sprite(arrow-right)
 
@@ -390,7 +418,7 @@
 	font-size: 30px
 	line-height: 36px
 	color: #3073b6
-	cursor: pointer
+	cursor: default
 
 .imp-b
 	padding-top: 35px
@@ -412,6 +440,9 @@
 .section
 	padding-top: 40px
 	padding-bottom: 35px
+
+	&_card
+		padding-bottom: 100px
 
 .way-b__list
 	padding: 15px 0 0 0
@@ -503,6 +534,11 @@
 .catalog-b__text-box
 	padding: 0 5px
 
+.date-b
+	padding-bottom: 10px
+	margin-bottom: 15px
+	border-bottom: 1px solid #aaaaaa
+
 .example-b
 	> div
 		border-bottom: 1px solid #cccccc
@@ -533,7 +569,9 @@
 	padding: 10px 0
 
 	&_left
+		max-width: 150px
 		padding-right: 10px
+		color: #999999
 
 	&_last
 		padding-bottom: 40px
@@ -584,9 +622,15 @@
 	background: #37329d
 
 .footer__list
-	padding: 25px 0 0 0
+	padding-top: 25px
 	margin: 0
 	list-style: none
+
+	&_left
+		padding-left: 40px
+
+	&_right
+		padding-left: 10px
 
 .soc-b
 	padding-top: 60px
@@ -604,7 +648,22 @@
 	min-width: 32px
 	min-height: 32px
 	margin-right: 5px
+	background: #3073b6
+	-webkit-border-radius: 5px
+	-moz-border-radius: 5px
+	border-radius: 5px
 	display: block
+	position: relative
+	+trans()
+
+	&:hover
+		background: #2b6096
+
+.soc-b__ico
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate( -50%, -50%)
 
 .soc-b__ico-instagram
 	+sprite(instagram)
@@ -619,6 +678,11 @@
 	+sprite(mail-ru)
 
 .soc-b__ico-f
+	top: auto
+	left: auto
+	bottom: 0
+	right: 4px
+	transform: translate( 0, 0)
 	+sprite(f)
 
 .soc-b__ico-twitter
@@ -676,9 +740,9 @@
 .p-0
 	padding: 0
 
-.ptb-20
-	padding-top: 20px
-	padding-bottom: 20px
+.ptb-15
+	padding-top: 15px
+	padding-bottom: 15px
 
 .plr-10
 	padding-left: 10px
@@ -728,6 +792,9 @@
 
 	&_small
 		font-size: 35px
+
+	&_mb-20
+		margin-bottom: 20px
 
 .h3
 	margin-top: 0
@@ -808,14 +875,21 @@
 		&-tel
 			text-decoration: none
 
+		&:hover
+			color: #839fcc
+
 button.btn,
-a.btn
+a.btn,
+.btn
 	padding: 0 10px
 	display: inline-block
 	vertical-align: top
 	font-family: EtelkaReg
 	font-size: 20px
 	color: #fff
+	cursor: pointer
+	outline: none !important
+	+trans()
 
 	&_square
 		width: 370px
@@ -846,22 +920,27 @@ a.btn
 		&:focus
 			background: #3e39ac
 			color: #fff
+			outline: none
 
 		&:active
 			background: #302c89
 			color: #fff
+			outline: none
 
 		&:visited
 			background: #37329d
+			outline: none
 
 			&:hover,
 			&:focus
 				background: #3e39ac
 				color: #fff
+				outline: none
 
 			&:active
 				background: #302c89
 				color: #fff
+				outline: none
 
 	&_blue
 		background: #3073b6

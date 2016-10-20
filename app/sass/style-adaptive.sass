@@ -66,6 +66,9 @@
 	.lots-b__link
 		position: relative
 
+		&:hover
+			text-decoration: none
+
 	.slider-b__item
 		text-align: left
 
@@ -74,6 +77,13 @@
 
 	.soc-b
 		padding-top: 30px
+
+	.footer__list
+		&_left
+			padding-left: 20px
+
+		&_right
+			padding-left: 0
 
 	.mb-60-md
 		margin-bottom: 60px
@@ -167,6 +177,10 @@
 	.catalog-b__link-img
 		height: 260px
 
+	.section
+		&_card
+			padding-bottom: 30px
+
 	.photo-b__img-link
 		&_main
 			height: 480px
@@ -180,6 +194,10 @@
 
 		.footer__list
 			padding-top: 0
+
+	.footer__list
+		&_right
+			padding-left: 0
 
 @media screen and (max-width: 640px)
 	.photo-b__img-link
@@ -199,6 +217,13 @@
 	.catalog-b__link-img
 		height: 200px
 
+	.slider-b__link
+		margin-left: auto
+		margin-right: auto
+
+	.slider-b__list
+		width: 100%
+
 @media screen and (max-width: 569px)
 	.service-b
 		.links-b
@@ -206,6 +231,30 @@
 
 	.catalog-b__link-img
 		height: 180px
+
+@media screen and (max-width: 530px)
+	.slider-b__steps
+		display: inline-block
+
+	.slider-b__item
+		&_left
+			width: 25%
+			padding-left: 10px
+			padding-right: 10px
+			text-align: center
+
+			&:last-child
+				padding-right: 10px
+
+		&_right
+			padding-right: 0
+			text-align: center
+
+	.slider-b__ico-arrow-right
+		display: none
+
+	.slider-b__small-text
+		display: none
 
 @media screen and (max-width: 479px)
 	.slider-b__link
