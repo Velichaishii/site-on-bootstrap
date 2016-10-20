@@ -63,15 +63,21 @@
   .navbar-default .navbar-nav > li:last-child:after {
     display: none;
   }
-  .navbar-default .menu__list-right {
-    width: 100%;
+
+  .lots-b {
+    float: right;
   }
-  .navbar-default .menu__list-right .menu__item-right:before {
-    display: none;
+
+  .lots-b__link {
+    position: relative;
+  }
+
+  .slider-b__item {
+    text-align: left;
   }
 
   .catalog-b__link-img {
-    height: 254px;
+    height: 280px;
   }
 
   .soc-b {
@@ -108,10 +114,16 @@
   }
 
   .catalog-b__link-img {
-    height: 325px;
+    height: 320px;
   }
 
+  .h2 {
+    margin: 0;
+    font-family: EtelkaReg;
+    font-size: 35px;
+  }
   .h2_small {
+    font-size: 25px;
     text-align: center;
   }
 
@@ -133,6 +145,32 @@
     padding: 0;
   }
 
+  .lots-b {
+    width: 200px;
+    float: right;
+  }
+  .lots-b:before {
+    width: 200px;
+  }
+
+  .lots-b__link {
+    text-align: center;
+  }
+
+  .lots-b__ico-wrap {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .menu__text_big {
+    width: auto;
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 25px;
+  }
+
   .slider-b .owl-theme .owl-nav .owl-prev {
     width: 30px;
     height: 30px;
@@ -149,7 +187,14 @@
   }
 
   .catalog-b__link-img {
-    height: 450px;
+    height: 260px;
+  }
+
+  .photo-b__img-link_main {
+    height: 480px;
+  }
+  .photo-b__img-link_second {
+    height: 240px;
   }
 
   .contacts-b {
@@ -160,9 +205,35 @@
     padding-top: 0;
   }
 }
+@media screen and (max-width: 640px) {
+  .photo-b__img-link_main {
+    height: 360px;
+  }
+  .photo-b__img-link_second {
+    height: 180px;
+  }
+
+  .filter-b {
+    margin-bottom: 20px;
+  }
+
+  .filter-b__item {
+    width: 50%;
+    padding: 0 20px 20px 20px;
+    text-align: center;
+  }
+
+  .catalog-b__link-img {
+    height: 200px;
+  }
+}
 @media screen and (max-width: 569px) {
   .service-b .links-b {
     display: none;
+  }
+
+  .catalog-b__link-img {
+    height: 180px;
   }
 }
 @media screen and (max-width: 479px) {
@@ -185,8 +256,25 @@
     border-bottom: 2px solid #909090;
   }
 
+  .photo-b__img-link_main {
+    height: 240px;
+  }
+  .photo-b__img-link_second {
+    height: 120px;
+  }
+
+  .catalog-b__item-wrap {
+    width: 100%;
+    display: block;
+  }
+
   .catalog-b__link-img {
-    height: 300px;
+    height: 260px;
+  }
+
+  .catalog-b__img {
+    max-height: 140%;
+    max-width: 140%;
   }
 
   .subscribe-b {

@@ -120,9 +120,10 @@
 	border-radius: 0
 
 .navbar-default
-	min-height: 80px
 	height: auto
+	min-height: 80px
 	margin: 0
+	background: #3073b6
 	position: relative
 	z-index: 10
 
@@ -132,10 +133,11 @@
 	.navbar-toggle
 		width: 44px
 		height: 44px
-		margin-top: 18px
+		margin: 18px 0 0 15px
 		border-color: #fff
+		float: left
 		position: relative
-		z-index: 2
+		z-index: 10
 
 		&:hover, &:active, &:focus
 			background: #839fcc
@@ -160,13 +162,6 @@
 
 				&:hover
 					color: #371794
-
-				&_right
-					font-size: 20px
-					position: relative
-
-					&:hover
-						color: #839fcc
 
 .menu__item-left
 	height: 80px
@@ -199,10 +194,14 @@
 .menu__list-right
 	margin: 0
 
-.menu__item-right
+.lots-b
+	width: 270px
 	height: 80px
 	padding: 20px
-	position: relative
+	position: absolute
+	top: 0
+	right: 0
+	z-index: 10
 
 	&:before
 		width: 270px
@@ -212,7 +211,30 @@
 		position: absolute
 		top: 50%
 		right: 0
+		z-index: -10
 		content: ""
+
+.lots-b__link
+	height: 100%
+	display: block
+	position: relative
+	font-size: 20px
+	color: #fff
+
+	&:hover
+		color: #839fcc
+
+.lots-b__text
+	width: calc(100% - 45px)
+	float: left
+
+.lots-b__ico-wrap
+	height: 100%
+	width: 30px
+	line-height: 40px
+	margin-right: 15px
+	float: left
+	text-align: center
 
 .menu__ico-wrap
 	height: 100%
@@ -242,10 +264,14 @@
 .menu__text
 	width: calc(100% - 45px)
 	float: left
+	text-decoration: underline
 
 	&_small
 		max-width: 150px
 		line-height: 20px
+
+	&_big
+		line-height: 40px
 
 .achievement-b
 	width: 154px
@@ -314,7 +340,7 @@
 	list-style: none
 
 .slider-b__item
-	padding-right: 100px
+	padding-right: 70px
 	display: inline-block
 	position: relative
 	font-family: FRADM
@@ -330,6 +356,11 @@
 		&:last-child
 			padding-right: 60px
 
+.slider-b__control
+	min-width: 65px
+	display: block
+	position: relative
+
 .slider-b__small-text
 	display: inline-block
 	position: absolute
@@ -338,6 +369,9 @@
 	font-family: EtelkaReg
 	font-size: 15px
 	line-height: 16px
+
+	&_first
+		right: 8px
 
 .slider-b__ico-arrow-right
 	position: absolute
@@ -419,18 +453,21 @@
 
 .filter-b
 	padding-top: 15px
+	margin-bottom: 40px
 	border-top: 1px solid #aaaaaa
 
 .filter-b__list
 	width: 100%
 	padding: 0
 	margin: 0
+	font-size: 0
 	list-style: none
 
 .filter-b__item
-	margin-right: 40px
+	padding-right: 40px
 	display: inline-block
 	vertical-align: top
+	font-size: 16px
 
 .filter-b__link
 	text-decoration: underline
@@ -439,7 +476,7 @@
 	color: #37329d
 
 .catalog-b__item-wrap
-	margin-bottom: 30px
+	margin-bottom: 50px
 
 .catalog-b__item
 	padding: 15px
@@ -474,10 +511,13 @@
 		border-top: 1px solid #cccccc
 
 .example-b__row
+	margin-left: 0
+	margin-right: 0
 	padding-top: 20px
 	padding-bottom: 20px
 
 .example-b__left-b
+	margin-bottom: 20px
 	padding-left: 0
 	font-family: EtelkaReg
 	font-size: 20px
@@ -516,11 +556,17 @@
 	overflow: hidden
 
 	&_main
+		height: 280px
 		margin-bottom: 10px
 
+	&_second
+		height: 108px
+
 .photo-b__img
-	width: 100%
-	height: auto
+	min-width: 100%
+	min-height: 100%
+	max-width: 120%
+	max-height: 120%
 	font-size: 0
 
 .photo-b__img-second-b
@@ -870,8 +916,5 @@ a.btn
 	width: 100%
 	padding: 30px 0
 	background: #cee0f2
-
-.navbar-default
-	background: #3073b6
 
 @import "style-adaptive"

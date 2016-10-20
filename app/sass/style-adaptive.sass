@@ -60,15 +60,17 @@
 					&:after
 						display: none
 
-		.menu__list-right
-			width: 100%
+	.lots-b
+		float: right
 
-			.menu__item-right
-				&:before
-					display: none
+	.lots-b__link
+		position: relative
+
+	.slider-b__item
+		text-align: left
 
 	.catalog-b__link-img
-		height: 254px
+		height: 280px
 
 	.soc-b
 		padding-top: 30px
@@ -98,10 +100,15 @@
 		margin: auto
 
 	.catalog-b__link-img
-		height: 325px
+		height: 320px
 
 	.h2
+		margin: 0
+		font-family: EtelkaReg
+		font-size: 35px
+
 		&_small
+			font-size: 25px
 			text-align: center
 
 	.text-very-big
@@ -117,6 +124,28 @@
 
 	.logo-b__copyright
 		padding: 0
+
+	.lots-b
+		width: 200px
+		float: right
+
+		&:before
+			width: 200px
+
+	.lots-b__link
+		text-align: center
+
+	.lots-b__ico-wrap
+		float: none
+		display: inline-block
+		vertical-align: middle
+
+	.menu__text_big
+		width: auto
+		float: none
+		display: inline-block
+		vertical-align: middle
+		font-size: 25px
 
 	.slider-b
 		.owl-theme
@@ -136,7 +165,14 @@
 					border-bottom: 3px solid #909090
 
 	.catalog-b__link-img
-		height: 450px
+		height: 260px
+
+	.photo-b__img-link
+		&_main
+			height: 480px
+
+		&_second
+			height: 240px
 
 	.contacts-b
 		padding-top: 30px
@@ -145,10 +181,31 @@
 		.footer__list
 			padding-top: 0
 
+@media screen and (max-width: 640px)
+	.photo-b__img-link
+		&_main
+			height: 360px
+
+		&_second
+			height: 180px
+	.filter-b
+		margin-bottom: 20px
+
+	.filter-b__item
+		width: 50%
+		padding: 0 20px 20px 20px
+		text-align: center
+
+	.catalog-b__link-img
+		height: 200px
+
 @media screen and (max-width: 569px)
 	.service-b
 		.links-b
 			display: none
+
+	.catalog-b__link-img
+		height: 180px
 
 @media screen and (max-width: 479px)
 	.slider-b__link
@@ -171,8 +228,23 @@
 					border-right: 2px solid #909090
 					border-bottom: 2px solid #909090
 
+	.photo-b__img-link
+		&_main
+			height: 240px
+
+		&_second
+			height: 120px
+
+	.catalog-b__item-wrap
+		width: 100%
+		display: block
+
 	.catalog-b__link-img
-		height: 300px
+		height: 260px
+
+	.catalog-b__img
+		max-height: 140%
+		max-width: 140%
 
 	.subscribe-b
 		text-align: center
