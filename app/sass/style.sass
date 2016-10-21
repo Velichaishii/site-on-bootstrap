@@ -413,6 +413,9 @@
 		&:last-child
 			padding-right: 0
 
+.active
+	color: #371794
+
 .slider-b__control
 	display: inline-block
 	position: relative
@@ -426,10 +429,7 @@
 		width: 100px
 
 	&:hover
-		color: #37329d
-
-	&:active
-		color: #37329d
+		color: #371794
 
 .slider-b__small-text
 	display: inline-block
@@ -955,6 +955,9 @@ a.btn,
 	outline: none !important
 	+trans()
 
+	&:visited
+		outline: none
+
 	&_square
 		width: 370px
 		line-height: 50px
@@ -978,55 +981,59 @@ a.btn,
 		border-radius: 10px
 
 	&_purple
+		border: 2px solid #37329d
 		background: #37329d
 
 		&:hover,
 		&:focus
-			background: #3e39ac
-			color: #fff
-			outline: none
+			background: #fff
+			color: #37329d
 
 		&:active
+			border: 2px solid #302c89
 			background: #302c89
 			color: #fff
-			outline: none
 
 		&:visited
+			border: 2px solid #37329d
 			background: #37329d
-			outline: none
 
 			&:hover,
 			&:focus
-				background: #3e39ac
-				color: #fff
-				outline: none
+				background: #fff
+				color: #37329d
+
 
 			&:active
+				border: 2px solid #302c89
 				background: #302c89
 				color: #fff
-				outline: none
 
 	&_blue
+		border: 2px solid #3073b6
 		background: #3073b6
 
 		&:hover,
 		&:focus
-			background: #3581cd
-			color: #fff
+			background: #fff
+			color: #3073b6
 
 		&:active
+			border: 2px solid #2b639b
 			background: #2b639b
 			color: #fff
 
 		&:visited
+			border: 2px solid #3073b6
 			background: #3073b6
 
 			&:hover,
 			&:focus
-				background: #3581cd
-				color: #fff
+				background: #fff
+				color: #3073b6
 
 			&:active
+				border: 2px solid #2b639b
 				background: #2b639b
 				color: #fff
 

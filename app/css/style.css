@@ -674,6 +674,10 @@
   padding-right: 0;
 }
 
+.active {
+  color: #371794;
+}
+
 .slider-b__control {
   display: inline-block;
   position: relative;
@@ -691,10 +695,7 @@
   width: 100px;
 }
 .slider-b__control:hover {
-  color: #37329d;
-}
-.slider-b__control:active {
-  color: #37329d;
+  color: #371794;
 }
 
 .slider-b__small-text {
@@ -1430,6 +1431,11 @@ a.btn,
   -o-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
 }
+button.btn:visited,
+a.btn:visited,
+.btn:visited {
+  outline: none;
+}
 button.btn_square,
 a.btn_square,
 .btn_square {
@@ -1461,6 +1467,7 @@ a.btn_br,
 button.btn_purple,
 a.btn_purple,
 .btn_purple {
+  border: 2px solid #37329d;
   background: #37329d;
 }
 button.btn_purple:hover, button.btn_purple:focus,
@@ -1468,42 +1475,41 @@ a.btn_purple:hover,
 a.btn_purple:focus,
 .btn_purple:hover,
 .btn_purple:focus {
-  background: #3e39ac;
-  color: #fff;
-  outline: none;
+  background: #fff;
+  color: #37329d;
 }
 button.btn_purple:active,
 a.btn_purple:active,
 .btn_purple:active {
+  border: 2px solid #302c89;
   background: #302c89;
   color: #fff;
-  outline: none;
 }
 button.btn_purple:visited,
 a.btn_purple:visited,
 .btn_purple:visited {
+  border: 2px solid #37329d;
   background: #37329d;
-  outline: none;
 }
 button.btn_purple:visited:hover, button.btn_purple:visited:focus,
 a.btn_purple:visited:hover,
 a.btn_purple:visited:focus,
 .btn_purple:visited:hover,
 .btn_purple:visited:focus {
-  background: #3e39ac;
-  color: #fff;
-  outline: none;
+  background: #fff;
+  color: #37329d;
 }
 button.btn_purple:visited:active,
 a.btn_purple:visited:active,
 .btn_purple:visited:active {
+  border: 2px solid #302c89;
   background: #302c89;
   color: #fff;
-  outline: none;
 }
 button.btn_blue,
 a.btn_blue,
 .btn_blue {
+  border: 2px solid #3073b6;
   background: #3073b6;
 }
 button.btn_blue:hover, button.btn_blue:focus,
@@ -1511,18 +1517,20 @@ a.btn_blue:hover,
 a.btn_blue:focus,
 .btn_blue:hover,
 .btn_blue:focus {
-  background: #3581cd;
-  color: #fff;
+  background: #fff;
+  color: #3073b6;
 }
 button.btn_blue:active,
 a.btn_blue:active,
 .btn_blue:active {
+  border: 2px solid #2b639b;
   background: #2b639b;
   color: #fff;
 }
 button.btn_blue:visited,
 a.btn_blue:visited,
 .btn_blue:visited {
+  border: 2px solid #3073b6;
   background: #3073b6;
 }
 button.btn_blue:visited:hover, button.btn_blue:visited:focus,
@@ -1530,12 +1538,13 @@ a.btn_blue:visited:hover,
 a.btn_blue:visited:focus,
 .btn_blue:visited:hover,
 .btn_blue:visited:focus {
-  background: #3581cd;
-  color: #fff;
+  background: #fff;
+  color: #3073b6;
 }
 button.btn_blue:visited:active,
 a.btn_blue:visited:active,
 .btn_blue:visited:active {
+  border: 2px solid #2b639b;
   background: #2b639b;
   color: #fff;
 }
