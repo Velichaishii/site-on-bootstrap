@@ -27,7 +27,7 @@ $(document).ready(function() {
     $(".owl-carousel").owlCarousel({
         nav: true,
         dots: true,
+        autoHeight: true,
         items: 1
-
     });
 });

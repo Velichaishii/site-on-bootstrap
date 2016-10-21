@@ -181,19 +181,27 @@
     font-size: 25px;
   }
 
+  .owl-prev-imit {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+  }
+
+  .owl-next-imit {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+  }
+
   .slider-b .owl-theme .owl-nav .owl-prev {
     width: 30px;
     height: 30px;
-    margin-top: -40px;
-    border-right: 3px solid #909090;
-    border-bottom: 3px solid #909090;
+    margin-top: -15px;
   }
   .slider-b .owl-theme .owl-nav .owl-next {
     width: 30px;
     height: 30px;
-    margin-top: -40px;
-    border-right: 3px solid #909090;
-    border-bottom: 3px solid #909090;
+    margin-top: -15px;
   }
 
   .catalog-b__link-img-wrap {
@@ -297,32 +305,24 @@
   .owl-prev-imit {
     width: 20px;
     height: 20px;
-    margin-top: -20px;
-    border-right: 2px solid #909090;
-    border-bottom: 2px solid #909090;
+    margin-top: -10px;
   }
 
   .owl-next-imit {
     width: 20px;
     height: 20px;
-    margin-top: -20px;
-    border-right: 2px solid #909090;
-    border-bottom: 2px solid #909090;
+    margin-top: -10px;
   }
 
   .slider-b .owl-theme .owl-nav .owl-prev {
     width: 20px;
     height: 20px;
-    margin-top: -25px;
-    border-right: 2px solid #909090;
-    border-bottom: 2px solid #909090;
+    margin-top: -10px;
   }
   .slider-b .owl-theme .owl-nav .owl-next {
     width: 20px;
     height: 20px;
-    margin-top: -25px;
-    border-right: 2px solid #909090;
-    border-bottom: 2px solid #909090;
+    margin-top: -10px;
   }
 
   .photo-b__img-link_main {
