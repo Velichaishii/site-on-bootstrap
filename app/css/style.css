@@ -289,14 +289,20 @@
 .navbar-default .navbar-toggle .icon-bar {
   background: #fff;
 }
+.navbar-default .navbar-nav {
+  width: calc(100% - 290px);
+  height: 80px;
+  display: flex;
+}
 .navbar-default .navbar-nav > li > .menu__link {
   height: 100%;
-  padding: 20px 17px;
-  display: block;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  align-content: center;
   font-family: EtelkaReg;
   font-size: 17px;
   font-weight: normal;
-  line-height: 40px;
   color: #fff;
   transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -310,7 +316,7 @@
 }
 
 .menu__item-left {
-  height: 80px;
+  height: 100%;
   padding-right: 2px;
   position: relative;
 }
@@ -385,7 +391,6 @@
 }
 
 .menu__ico-wrap {
-  height: 100%;
   width: 30px;
   margin-right: 15px;
   float: left;
@@ -1620,6 +1625,7 @@ a.btn_blue:visited:active,
   .navbar-default .navbar-nav {
     width: 100%;
     margin: 0;
+    display: block;
   }
   .navbar-default .navbar-nav > li {
     padding: 0;
@@ -1693,6 +1699,13 @@ a.btn_blue:visited:active,
   }
 }
 @media screen and (max-width: 1020px) {
+  .achievement-b-wrap {
+    padding: 0;
+  }
+  .achievement-b-wrap div {
+    padding: 0;
+  }
+
   .subscribe-b {
     width: 100%;
     margin-bottom: 30px;

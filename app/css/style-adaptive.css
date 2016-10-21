@@ -34,6 +34,7 @@
   .navbar-default .navbar-nav {
     width: 100%;
     margin: 0;
+    display: block;
   }
   .navbar-default .navbar-nav > li {
     padding: 0;
@@ -107,6 +108,13 @@
   }
 }
 @media screen and (max-width: 1020px) {
+  .achievement-b-wrap {
+    padding: 0;
+  }
+  .achievement-b-wrap div {
+    padding: 0;
+  }
+
   .subscribe-b {
     width: 100%;
     margin-bottom: 30px;

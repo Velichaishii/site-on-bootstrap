@@ -147,15 +147,20 @@
 			background: #fff
 
 	.navbar-nav
+		width: calc(100% - 290px)
+		height: 80px
+		display: flex
+
 		>li
 			>.menu__link
 				height: 100%
-				padding: 20px 17px
-				display: block
+				padding: 0 15px
+				display: flex
+				align-items: center
+				align-content: center
 				font-family: EtelkaReg
 				font-size: 17px
 				font-weight: normal
-				line-height: 40px
 				color: #fff
 				+trans()
 
@@ -164,7 +169,7 @@
 					color: #fff
 
 .menu__item-left
-	height: 80px
+	height: 100%
 	padding-right: 2px
 	position: relative
 
@@ -230,7 +235,6 @@
 	text-align: center
 
 .menu__ico-wrap
-	height: 100%
 	width: 30px
 	margin-right: 15px
 	float: left
