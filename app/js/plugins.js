@@ -46,6 +46,14 @@ $(document).ready(function() {
         nav: true,
         dots: true,
         autoHeight: true,
-        items: 1
+        items: 1,
+        responsive : {
+            320 : {
+                mouseDrag: true
+            },
+            768 : {
+                mouseDrag: false
+            }
+        }
     });
 });

@@ -181,6 +181,10 @@
     font-size: 25px;
   }
 
+  .slider-b__row {
+    margin-bottom: 15px;
+  }
+
   .owl-prev-imit {
     width: 30px;
     height: 30px;
@@ -282,9 +286,26 @@
 @media screen and (max-width: 530px) {
   .slider-b__steps {
     display: inline-block;
+    margin-bottom: 10px;
   }
 
-  .slider-b__item_left {
+  .slider-b__link {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .slider-b__control {
+    width: 50px;
+    height: 50px;
+    line-height: 47px;
+    border: 2px solid #3073b6;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 30px;
+  }
+
+  .slider-b__item {
     width: 25%;
     padding-left: 3%;
     padding-right: 3%;
@@ -293,9 +314,8 @@
   .slider-b__item_left:after {
     display: none;
   }
-  .slider-b__item_right {
-    padding-right: 0;
-    text-align: center;
+  .slider-b__item.active span {
+    background: #cee0f2;
   }
 
   .slider-b__small-text {
@@ -308,19 +328,53 @@
   }
 
   .owl-prev-imit {
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
     border-right: 2px solid #909090;
     border-bottom: 2px solid #909090;
   }
+  .owl-prev-imit:before {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #3073b6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -10;
+    transform: translate(-43%, -43%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    content: "";
+  }
+  .owl-prev-imit:hover:before, .owl-prev-imit:active:before, .owl-prev-imit:focus:before {
+    background: #cee0f2;
+  }
 
   .owl-next-imit {
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
     border-right: 2px solid #909090;
     border-bottom: 2px solid #909090;
+  }
+  .owl-next-imit:before {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #3073b6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -10;
+    transform: translate(-43%, -43%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    content: "";
+  }
+  .owl-next-imit:hover:before, .owl-next-imit:active:before, .owl-next-imit:focus:before {
+    background: #cee0f2;
   }
 
   .slider-b .owl-theme .owl-nav .owl-prev {

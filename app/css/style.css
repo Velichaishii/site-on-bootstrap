@@ -189,6 +189,7 @@
 }
 
 .tel-b {
+  max-width: 363px;
   padding: 20px 30px 0 30px;
   display: inline-block;
   vertical-align: top;
@@ -264,6 +265,7 @@
 
 .navbar-default {
   margin: 0;
+  border: none;
   background: #3073b6;
   position: relative;
   z-index: 10;
@@ -314,6 +316,9 @@
 .navbar-default .navbar-nav > li > .menu__link:hover, .navbar-default .navbar-nav > li > .menu__link:active, .navbar-default .navbar-nav > li > .menu__link:focus {
   background: #371794;
   color: #fff;
+}
+.navbar-default .navbar-nav > li.active > .menu__link {
+  background: #371794;
 }
 
 .menu__item-left {
@@ -547,6 +552,7 @@
   position: absolute;
   top: 50%;
   left: 11px;
+  z-index: 100;
   transform: rotate(135deg);
 }
 
@@ -559,11 +565,12 @@
   position: absolute;
   top: 50%;
   right: 11px;
+  z-index: 100;
   transform: rotate(-45deg);
 }
 
 .slider-b .owl-theme .owl-carousel__item {
-  padding: 0 10%;
+  padding: 0 15%;
 }
 .slider-b .owl-theme .owl-nav {
   opacity: 0;
@@ -613,8 +620,8 @@
   margin-bottom: 20px;
   border-bottom: 2px solid #3073b6;
   font-family: EtelkaReg;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 20px;
+  line-height: 24px;
   color: #3073b6;
   display: none;
 }
@@ -641,7 +648,6 @@
   color: #cee0f2;
 }
 .slider-b__item_left {
-  vertical-align: top;
   padding-right: 70px;
 }
 .slider-b__item_left:after {
@@ -679,8 +685,7 @@
 .slider-b__item_right:last-child {
   padding-right: 0;
 }
-
-.active {
+.slider-b__item.active {
   color: #371794;
 }
 
@@ -853,7 +858,8 @@
   -ms-transition: all 0.3s ease 0s;
 }
 .catalog-b__item:hover {
-  background: #d9e4ff;
+  background: #f9fbff;
+  box-shadow: 0 0 10px 1px #ccc;
 }
 
 .catalog-b__link-img-wrap {
@@ -1773,6 +1779,10 @@ a.btn_blue:visited:active,
     font-size: 25px;
   }
 
+  .slider-b__row {
+    margin-bottom: 15px;
+  }
+
   .owl-prev-imit {
     width: 30px;
     height: 30px;
@@ -1874,9 +1884,26 @@ a.btn_blue:visited:active,
 @media screen and (max-width: 530px) {
   .slider-b__steps {
     display: inline-block;
+    margin-bottom: 10px;
   }
 
-  .slider-b__item_left {
+  .slider-b__link {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .slider-b__control {
+    width: 50px;
+    height: 50px;
+    line-height: 47px;
+    border: 2px solid #3073b6;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 30px;
+  }
+
+  .slider-b__item {
     width: 25%;
     padding-left: 3%;
     padding-right: 3%;
@@ -1885,9 +1912,8 @@ a.btn_blue:visited:active,
   .slider-b__item_left:after {
     display: none;
   }
-  .slider-b__item_right {
-    padding-right: 0;
-    text-align: center;
+  .slider-b__item.active span {
+    background: #cee0f2;
   }
 
   .slider-b__small-text {
@@ -1900,19 +1926,53 @@ a.btn_blue:visited:active,
   }
 
   .owl-prev-imit {
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
     border-right: 2px solid #909090;
     border-bottom: 2px solid #909090;
   }
+  .owl-prev-imit:before {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #3073b6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -10;
+    transform: translate(-43%, -43%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    content: "";
+  }
+  .owl-prev-imit:hover:before, .owl-prev-imit:active:before, .owl-prev-imit:focus:before {
+    background: #cee0f2;
+  }
 
   .owl-next-imit {
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
     border-right: 2px solid #909090;
     border-bottom: 2px solid #909090;
+  }
+  .owl-next-imit:before {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #3073b6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -10;
+    transform: translate(-43%, -43%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    content: "";
+  }
+  .owl-next-imit:hover:before, .owl-next-imit:active:before, .owl-next-imit:focus:before {
+    background: #cee0f2;
   }
 
   .slider-b .owl-theme .owl-nav .owl-prev {
