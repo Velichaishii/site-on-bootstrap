@@ -278,12 +278,48 @@
 	text-align: center
 	color: #3073b6
 
+.owl-carousel-wrap
+	position: relative
+
+.owl-nav-imit
+	span
+		display: block
+		z-index: 10
+		cursor: pointer
+
+		&:hover
+			border-color: #393185
+			background: none
+
+.owl-prev-imit
+	width: 60px
+	height: 60px
+	margin-top: -50px
+	border-right: 5px solid #909090
+	border-bottom: 5px solid #909090
+	position: absolute
+	top: 50%
+	left: 11px
+	transform: rotate(135deg)
+
+.owl-next-imit
+	width: 60px
+	height: 60px
+	margin-top: -50px
+	border-right: 5px solid #909090
+	border-bottom: 5px solid #909090
+	position: absolute
+	top: 50%
+	right: 11px
+	transform: rotate(-45deg)
+
 .slider-b
 	.owl-theme
 		.owl-carousel__item
 			padding: 0 10%
 
 		.owl-nav
+			opacity: 0
 			margin: 0
 
 			div
@@ -301,7 +337,7 @@
 			.owl-prev
 				width: 60px
 				height: 60px
-				margin-top: -80px
+				margin-top: -50px
 				border-right: 5px solid #909090
 				border-bottom: 5px solid #909090
 				position: absolute
@@ -312,7 +348,7 @@
 			.owl-next
 				width: 60px
 				height: 60px
-				margin-top: -80px
+				margin-top: -50px
 				border-right: 5px solid #909090
 				border-bottom: 5px solid #909090
 				position: absolute

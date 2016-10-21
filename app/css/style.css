@@ -22,8 +22,8 @@
 }
 
 .logo-b__ico-purple {
-  background-image: url('../images/icons-sd268a3e402.png');
-  background-position: 0 -335px;
+  background-image: url('../images/icons-sce19388f16.png');
+  background-position: 0 -560px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -41,8 +41,8 @@
 }
 
 .logo-b__ico-white {
-  background-image: url('../images/icons-sd268a3e402.png');
-  background-position: 0 -433px;
+  background-image: url('../images/icons-sce19388f16.png');
+  background-position: 0 -849px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -74,8 +74,8 @@
 }
 
 .ico-tel {
-  background-image: url('../images/icons-sd268a3e402.png');
-  background-position: 0 -910px;
+  background-image: url('../images/icons-sce19388f16.png');
+  background-position: 0 -1517px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -93,8 +93,8 @@
 }
 
 .ico-magnifier {
-  background-image: url('../images/icons-sd268a3e402.png');
-  background-position: 0 -531px;
+  background-image: url('../images/icons-sce19388f16.png');
+  background-position: 0 -1138px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -112,8 +112,8 @@
 }
 
 .ico-property {
-  background-image: url('../images/icons-sd268a3e402.png');
-  background-position: 0 -759px;
+  background-image: url('../images/icons-sce19388f16.png');
+  background-position: 0 -1366px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -131,7 +131,7 @@
 }
 
 .ico-fifty-fifty {
-  background-image: url('../images/icons-sd268a3e402.png');
+  background-image: url('../images/icons-sce19388f16.png');
   background-position: 0 -134px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -150,8 +150,8 @@
 }
 
 .ico-percents {
-  background-image: url('../images/icons-sd268a3e402.png');
-  background-position: 0 -644px;
+  background-image: url('../images/icons-sce19388f16.png');
+  background-position: 0 -1251px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -170,7 +170,7 @@
 
 .ico-calendar {
   margin-right: 10px;
-  background-image: url('../images/icons-sd268a3e402.png');
+  background-image: url('../images/icons-sce19388f16.png');
   background-position: 0 -23px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -397,8 +397,8 @@
 }
 
 .menu__ico-home {
-  background-image: url('../images/icons-sd268a3e402.png');
-  background-position: 0 -275px;
+  background-image: url('../images/icons-sce19388f16.png');
+  background-position: 0 -500px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -416,7 +416,7 @@
 }
 
 .menu__ico-doc {
-  background-image: url('../images/icons-sd268a3e402.png');
+  background-image: url('../images/icons-sce19388f16.png');
   background-position: 0 -72px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -435,8 +435,8 @@
 }
 
 .menu__ico-man {
-  background-image: url('../images/icons-sd268a3e402.png');
-  background-position: 0 -615px;
+  background-image: url('../images/icons-sce19388f16.png');
+  background-position: 0 -1222px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -454,8 +454,8 @@
 }
 
 .menu__ico-mail {
-  background-image: url('../images/icons-sd268a3e402.png');
-  background-position: 0 -591px;
+  background-image: url('../images/icons-sce19388f16.png');
+  background-position: 0 -1198px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -473,8 +473,8 @@
 }
 
 .menu__ico-tablet-folder {
-  background-image: url('../images/icons-sd268a3e402.png');
-  background-position: 0 -874px;
+  background-image: url('../images/icons-sce19388f16.png');
+  background-position: 0 -1481px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -518,10 +518,49 @@
   color: #3073b6;
 }
 
+.owl-carousel-wrap {
+  position: relative;
+}
+
+.owl-nav-imit span {
+  display: block;
+  z-index: 10;
+  cursor: pointer;
+}
+.owl-nav-imit span:hover {
+  border-color: #393185;
+  background: none;
+}
+
+.owl-prev-imit {
+  width: 60px;
+  height: 60px;
+  margin-top: -50px;
+  border-right: 5px solid #909090;
+  border-bottom: 5px solid #909090;
+  position: absolute;
+  top: 50%;
+  left: 11px;
+  transform: rotate(135deg);
+}
+
+.owl-next-imit {
+  width: 60px;
+  height: 60px;
+  margin-top: -50px;
+  border-right: 5px solid #909090;
+  border-bottom: 5px solid #909090;
+  position: absolute;
+  top: 50%;
+  right: 11px;
+  transform: rotate(-45deg);
+}
+
 .slider-b .owl-theme .owl-carousel__item {
   padding: 0 10%;
 }
 .slider-b .owl-theme .owl-nav {
+  opacity: 0;
   margin: 0;
 }
 .slider-b .owl-theme .owl-nav div {
@@ -539,7 +578,7 @@
 .slider-b .owl-theme .owl-nav .owl-prev {
   width: 60px;
   height: 60px;
-  margin-top: -80px;
+  margin-top: -50px;
   border-right: 5px solid #909090;
   border-bottom: 5px solid #909090;
   position: absolute;
@@ -550,7 +589,7 @@
 .slider-b .owl-theme .owl-nav .owl-next {
   width: 60px;
   height: 60px;
-  margin-top: -80px;
+  margin-top: -50px;
   border-right: 5px solid #909090;
   border-bottom: 5px solid #909090;
   position: absolute;
@@ -604,7 +643,7 @@
   top: 50%;
   right: 20%;
   transform: translateY(-50%);
-  background-image: url('../images/icons-sd268a3e402.png');
+  background-image: url('../images/icons-sce19388f16.png');
   background-position: 0 0;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1017,8 +1056,8 @@
 }
 
 .soc-b__ico-instagram {
-  background-image: url('../images/icons-sd268a3e402.png');
-  background-position: 0 -307px;
+  background-image: url('../images/icons-sce19388f16.png');
+  background-position: 0 -532px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -1036,8 +1075,8 @@
 }
 
 .soc-b__ico-vk {
-  background-image: url('../images/icons-sd268a3e402.png');
-  background-position: 0 -992px;
+  background-image: url('../images/icons-sce19388f16.png');
+  background-position: 0 -1599px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -1055,7 +1094,7 @@
 }
 
 .soc-b__ico-classmates {
-  background-image: url('../images/icons-sd268a3e402.png');
+  background-image: url('../images/icons-sce19388f16.png');
   background-position: 0 -44px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1074,8 +1113,8 @@
 }
 
 .soc-b__ico-mail-ru {
-  background-image: url('../images/icons-sd268a3e402.png');
-  background-position: 0 -563px;
+  background-image: url('../images/icons-sce19388f16.png');
+  background-position: 0 -1170px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -1098,7 +1137,7 @@
   bottom: 0;
   right: 4px;
   transform: translate(0, 0);
-  background-image: url('../images/icons-sd268a3e402.png');
+  background-image: url('../images/icons-sce19388f16.png');
   background-position: 0 -102px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1117,8 +1156,8 @@
 }
 
 .soc-b__ico-twitter {
-  background-image: url('../images/icons-sd268a3e402.png');
-  background-position: 0 -970px;
+  background-image: url('../images/icons-sce19388f16.png');
+  background-position: 0 -1577px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -1136,8 +1175,8 @@
 }
 
 .soc-b__ico-g-plus {
-  background-image: url('../images/icons-sd268a3e402.png');
-  background-position: 0 -249px;
+  background-image: url('../images/icons-sce19388f16.png');
+  background-position: 0 -474px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -1826,6 +1865,22 @@ a.btn_blue:visited:active,
 @media screen and (max-width: 479px) {
   .slider-b__link {
     margin-right: 0;
+  }
+
+  .owl-prev-imit {
+    width: 20px;
+    height: 20px;
+    margin-top: -20px;
+    border-right: 2px solid #909090;
+    border-bottom: 2px solid #909090;
+  }
+
+  .owl-next-imit {
+    width: 20px;
+    height: 20px;
+    margin-top: -20px;
+    border-right: 2px solid #909090;
+    border-bottom: 2px solid #909090;
   }
 
   .slider-b .owl-theme .owl-nav .owl-prev {
