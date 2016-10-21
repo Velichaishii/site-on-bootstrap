@@ -274,16 +274,15 @@
     padding-right: 10px;
     text-align: center;
   }
+  .slider-b__item_left:after {
+    display: none;
+  }
   .slider-b__item_left:last-child {
     padding-right: 10px;
   }
   .slider-b__item_right {
     padding-right: 0;
     text-align: center;
-  }
-
-  .slider-b__ico-arrow-right {
-    display: none;
   }
 
   .slider-b__small-text {
