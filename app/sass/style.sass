@@ -56,6 +56,7 @@
 	+sprite(calendar)
 
 .tel-b
+	max-width: 363px
 	padding: 20px 30px 0 30px
 	display: inline-block
 	vertical-align: top
@@ -121,6 +122,7 @@
 
 .navbar-default
 	margin: 0
+	border: none
 	background: #3073b6
 	position: relative
 	z-index: 10
@@ -168,6 +170,10 @@
 				&:hover, &:active, &:focus
 					background: #371794
 					color: #fff
+
+			&.active
+				>.menu__link
+					background: #371794
 
 .menu__item-left
 	height: 100%
@@ -305,6 +311,7 @@
 	position: absolute
 	top: 50%
 	left: 11px
+	z-index: 100
 	transform: rotate(135deg)
 
 .owl-next-imit
@@ -316,12 +323,13 @@
 	position: absolute
 	top: 50%
 	right: 11px
+	z-index: 100
 	transform: rotate(-45deg)
 
 .slider-b
 	.owl-theme
 		.owl-carousel__item
-			padding: 0 10%
+			padding: 0 15%
 
 		.owl-nav
 			opacity: 0
@@ -370,8 +378,8 @@
 	margin-bottom: 20px
 	border-bottom: 2px solid #3073b6
 	font-family: EtelkaReg
-	font-size: 30px
-	line-height: 36px
+	font-size: 20px
+	line-height: 24px
 	color: #3073b6
 	display: none
 
@@ -395,7 +403,6 @@
 	color: #cee0f2
 
 	&_left
-		vertical-align: top
 		padding-right: 70px
 
 		&:after
@@ -418,8 +425,8 @@
 		&:last-child
 			padding-right: 0
 
-.active
-	color: #371794
+	&.active
+		color: #371794
 
 .slider-b__control
 	display: inline-block
@@ -559,7 +566,8 @@
 	+trans()
 
 	&:hover
-		background: #d9e4ff
+		background: #f9fbff
+		box-shadow: 0 0 10px 1px #ccc
 
 
 .catalog-b__link-img-wrap
