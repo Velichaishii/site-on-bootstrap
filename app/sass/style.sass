@@ -128,6 +128,7 @@
 	z-index: 10
 
 	.navbar-collapse
+		border: none
 		position: relative
 
 	.navbar-toggle
@@ -569,23 +570,18 @@
 		background: #f9fbff
 		box-shadow: 0 0 10px 1px #ccc
 
-
-.catalog-b__link-img-wrap
-	width: 100%
-	height: 180px
-	margin-bottom: 15px
-	display: block
-	overflow: hidden
-	font-size: 0
-
 .catalog-b__link-img
 	width: 100%
-	height: 180px
+	height: 100%
+	margin-bottom: 15px
 	display: block
-	+trans()
+	position: relative
+	overflow: hidden
 
-	&:hover
-		transform: scale(1.1)
+	&:before
+		content: ''
+		margin-top: 70%
+		display: block
 
 .catalog-b__img
 	max-height: 120%
@@ -635,6 +631,11 @@
 
 .example-b__right-b
 	padding-left: 0
+
+.right-to-left-direction
+	@media screen and (min-width: 768px)
+		> div
+			float: right
 
 .charact-table
 	width: 100%
@@ -831,6 +832,9 @@
 
 .pb-170
 	padding-bottom: 170px
+
+.d-ib
+	display: inline-block
 
 .text-purple
 	color: #37329d
@@ -1079,5 +1083,16 @@ a.btn,
 	width: 100%
 	padding: 30px 0
 	background: #cee0f2
+
+.prop-content
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	+trans()
+
+	&:hover
+		transform: scale(1.1)
 
 @import "style-adaptive"

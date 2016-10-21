@@ -72,10 +72,6 @@
     margin-bottom: 30px;
   }
 
-  .catalog-b__link-img-wrap {
-    height: 280px;
-  }
-
   .soc-b {
     padding-top: 30px;
   }
@@ -121,10 +117,6 @@
 
   .achievement-b {
     margin: auto;
-  }
-
-  .catalog-b__link-img-wrap {
-    height: 320px;
   }
 
   .h2 {
@@ -216,8 +208,8 @@
     border-bottom: 3px solid #909090;
   }
 
-  .catalog-b__link-img-wrap {
-    height: 260px;
+  .contacts-info-b {
+    margin-bottom: 35px;
   }
 
   .section_card {
@@ -261,10 +253,6 @@
     text-align: center;
   }
 
-  .catalog-b__link-img-wrap {
-    height: 200px;
-  }
-
   .slider-b__link {
     margin-left: auto;
     margin-right: auto;
@@ -277,10 +265,6 @@
 @media screen and (max-width: 569px) {
   .service-b .links-b {
     display: none;
-  }
-
-  .catalog-b__link-img-wrap {
-    height: 180px;
   }
 }
 @media screen and (max-width: 530px) {
@@ -402,10 +386,6 @@
   .catalog-b__item-wrap {
     width: 100%;
     display: block;
-  }
-
-  .catalog-b__link-img-wrap {
-    height: 260px;
   }
 
   .catalog-b__img {
