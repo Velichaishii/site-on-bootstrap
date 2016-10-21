@@ -19,6 +19,7 @@ $(document).ready(function() {
 
     doc.on("click", ".slider-b__item", function(e){
         var index_el = $(this).data("slide");
+        doc.find(".slider-b__item").removeClass("active");
         $(this).addClass("active");
         $(this).closest(".slider-b").find(".owl-dot:eq("+index_el+")").trigger("click");
 
