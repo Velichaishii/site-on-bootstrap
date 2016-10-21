@@ -33,30 +33,18 @@
 
   .navbar-default .navbar-nav {
     width: 100%;
+    height: auto;
     margin: 0;
     display: block;
   }
   .navbar-default .navbar-nav > li {
-    padding: 0;
-    display: block;
     width: 100%;
+    display: block;
+    float: none;
+    padding: 0;
   }
   .navbar-default .navbar-nav > li > .menu__link {
     padding: 20px 20px;
-    color: #fff;
-  }
-  .navbar-default .navbar-nav > li > .menu__link:hover, .navbar-default .navbar-nav > li > .menu__link:active, .navbar-default .navbar-nav > li > .menu__link:focus {
-    background: #371794;
-    color: #fff;
-  }
-  .navbar-default .navbar-nav > li > .menu__link_left-big {
-    line-height: 38px;
-  }
-  .navbar-default .navbar-nav > li > .menu__link .menu__text_small {
-    max-width: 100%;
-  }
-  .navbar-default .navbar-nav > li > .menu__link_right {
-    background: #37329d;
   }
   .navbar-default .navbar-nav > li:before {
     display: none;
