@@ -120,7 +120,6 @@
 	border-radius: 0
 
 .navbar-default
-	height: 80px
 	margin: 0
 	background: #3073b6
 	position: relative
@@ -151,21 +150,22 @@
 		>li
 			>.menu__link
 				height: 100%
-				padding: 0
+				padding: 20px 17px
 				display: block
 				font-family: EtelkaReg
 				font-size: 17px
 				font-weight: normal
-				line-height: 38px
+				line-height: 40px
 				color: #fff
 				+trans()
 
 				&:hover
-					color: #371794
+					background: #371794
+					color: #fff
 
 .menu__item-left
 	height: 80px
-	padding: 20px 17px
+	padding-right: 2px
 	position: relative
 
 	&:before
@@ -176,7 +176,7 @@
 		border-right: 1px solid #2d6baa
 		position: absolute
 		top: 50%
-		left: 0
+		left: -2px
 		content: ""
 
 	&:last-child
@@ -197,25 +197,16 @@
 .lots-b
 	width: 270px
 	height: 80px
-	padding: 20px
 	position: absolute
 	top: 0
 	right: 15px
 	z-index: 10
 
-	&:before
-		width: 270px
-		height: 90px
-		margin-top: -45px
-		background: #37329d
-		position: absolute
-		top: 50%
-		right: 0
-		z-index: -10
-		content: ""
-
 .lots-b__link
-	height: 100%
+	height: 88px
+	padding: 23px 20px
+	margin: -4px 0
+	background: #37329d
 	display: block
 	position: relative
 	font-size: 20px
@@ -223,7 +214,8 @@
 	+trans()
 
 	&:hover
-		color: #839fcc
+		color: #fff
+		background: #371794
 
 .lots-b__text
 	width: calc(100% - 45px)
@@ -364,8 +356,19 @@
 	&_left
 		padding-right: 70px
 
+		&:after
+			content: ""
+			position: absolute
+			top: 50%
+			right: 20%
+			transform: translateY(-50%)
+			+sprite(arrow-right)
+
 		&:last-child
 			padding-right: 0
+
+			&:after
+				display: none
 
 	&_right
 		padding-right: 40px
@@ -399,13 +402,6 @@
 
 	&_first
 		margin-left: -8px
-
-.slider-b__ico-arrow-right
-	position: absolute
-	top: 50%
-	right: 20%
-	transform: translateY(-50%)
-	+sprite(arrow-right)
 
 .slider-b__link
 	display: inline-block
@@ -515,6 +511,11 @@
 .catalog-b__item
 	padding: 15px
 	border: 1px solid #cccccc
+	+trans()
+
+	&:hover
+		background: #d9e4ff
+
 
 .catalog-b__link-img-wrap
 	width: 100%
@@ -550,6 +551,13 @@
 	padding-bottom: 10px
 	margin-bottom: 15px
 	border-bottom: 1px solid #aaaaaa
+
+.news-b__link
+	display: block
+	+trans()
+
+	&:hover
+		text-decoration: none
 
 .example-b
 	> div
