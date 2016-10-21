@@ -16,6 +16,15 @@ $(document).ready(function() {
     });
 
 
+
+    doc.on("click", ".slider-b__item", function(e){
+        var index_el = $(this).index();
+        $(this).addClass("active");
+
+        $(this).closest(".slider-b").find(".owl-dot:eq("+index_el+")").trigger("click");
+
+    });
+
     $(".owl-carousel").owlCarousel({
 
         nav: true,
