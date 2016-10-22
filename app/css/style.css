@@ -1682,10 +1682,6 @@ a.btn_long,
   color: #828282;
 }
 
-.modal__bnt-wrap {
-  text-align: right;
-}
-
 @media screen and (max-width: 1199px) {
   .menu__text_small {
     line-height: 38px;
