@@ -1445,6 +1445,9 @@
 .link_white:visited, .link_white:focus {
   color: #fff;
 }
+.link_white:hover {
+  color: #839fcc;
+}
 
 button.btn,
 a.btn,
