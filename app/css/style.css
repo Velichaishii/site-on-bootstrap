@@ -1445,7 +1445,7 @@
 .link_white:visited, .link_white:focus {
   color: #fff;
 }
-.link_white:hover {
+.link_white:visited:hover, .link_white:focus:hover {
   color: #839fcc;
 }
 
@@ -1804,6 +1804,10 @@ a.btn_long,
 
   .achievement-b {
     margin: auto;
+  }
+
+  .fancybox-nav span {
+    visibility: visible;
   }
 
   .h2 {
