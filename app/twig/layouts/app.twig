@@ -11,17 +11,22 @@
     {% include "stylesheets.twig" %}
 </head>
 <body>
-    <!-- Header block -->
-    {% include "header.twig" %}
-    <!-- Header block end -->
+    <div class="site-wrap">
+        <!-- Header block -->
+        {% include "header.twig" %}
+        <!-- Header block end -->
 
-    <!-- Block content -->
-    {% block content %}{% endblock %}
-    <!-- Block content end -->
+        <!-- Block content -->
+        {% block content %}{% endblock %}
+        <!-- Block content end -->
 
-    <!-- Footer block -->
-    {% include "footer.twig" %}
-    <!-- Footer block end -->
+        <!-- Footer block -->
+        {% include "footer.twig" %}
+        <!-- Footer block end -->
+    </div>
+
+    <!-- Popups -->
+    {% include "popups.twig" %}
 
     <!-- Scripts -->
     {% include "scripts.twig" %}

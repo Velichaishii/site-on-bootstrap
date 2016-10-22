@@ -1,4 +1,9 @@
 @import url(../css/fonts.css);
+.site-wrap {
+  min-width: 320px;
+  overflow: hidden;
+}
+
 .header {
   padding-top: 35px;
 }
@@ -1388,6 +1393,11 @@
 .link {
   text-decoration: underline;
   transition: 0.5s ease 0s;
+  cursor: pointer;
+}
+.link:visited, .link:focus {
+  border: none;
+  outline: none;
 }
 .link_blue {
   display: block;
@@ -1417,6 +1427,9 @@
 .link_blue:hover {
   color: #37329d;
 }
+.link_blue:visited, .link_blue:focus {
+  color: #3072b6;
+}
 .link_white {
   display: inline-block;
   font-family: EtelkaReg;
@@ -1428,6 +1441,9 @@
 }
 .link_white:hover {
   color: #839fcc;
+}
+.link_white:visited, .link_white:focus {
+  color: #fff;
 }
 
 button.btn,
@@ -1450,7 +1466,7 @@ a.btn,
 button.btn:visited,
 a.btn:visited,
 .btn:visited {
-  outline: none;
+  outline: none !important;
 }
 button.btn_square,
 a.btn_square,
@@ -1564,6 +1580,16 @@ a.btn_blue:visited:active,
   background: #2b639b;
   color: #fff;
 }
+button.btn_modal,
+a.btn_modal,
+.btn_modal {
+  width: auto;
+}
+button.btn_long,
+a.btn_long,
+.btn_long {
+  width: 100%;
+}
 
 .img-increasing {
   width: 100%;
@@ -1614,6 +1640,50 @@ a.btn_blue:visited:active,
 }
 .prop-content:hover {
   transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+}
+
+.modal-header .close {
+  margin-top: 2px;
+}
+.modal-header .close:active, .modal-header .close:focus {
+  outline: none;
+}
+
+.modal__h5 {
+  margin: 0;
+  font-family: EtelkaBol;
+  font-size: 16px;
+  line-height: 23px;
+  color: #37329d;
+}
+
+.modal__entry-field {
+  min-height: 37px;
+  margin-bottom: 10px;
+  border: 1px solid #3073b6;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #828282;
+}
+
+.modal__textarea {
+  min-width: 100%;
+  max-width: 268px;
+  max-height: 380px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #3073b6;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #828282;
+}
+
+.modal__bnt-wrap {
+  text-align: right;
 }
 
 @media screen and (max-width: 1199px) {
