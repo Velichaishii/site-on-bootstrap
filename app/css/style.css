@@ -1,3 +1,4 @@
+/*build:css css/common.css*/
 @import url(../css/fonts.css);
 .site-wrap {
   min-width: 320px;
