@@ -642,6 +642,21 @@
 	&:hover
 		text-decoration: none
 
+.paginatinon-b__list
+	padding-left: 0
+	list-style: none
+	text-align: center
+	font-size: 0
+
+.pagination-b__item
+	margin-right: 20px
+	display: inline-block
+	font-size: 20px
+	font-weight: 600
+
+	&:last-child
+		margin-right: 0
+
 .example-b
 	> div
 		border-bottom: 1px solid #cccccc
@@ -780,7 +795,6 @@
 	-ms-transform: translate( -50%, -50%)
 	-o-transform: translate( -50%, -50%)
 	transform: translate( -50%, -50%)
-
 
 .soc-b__ico-instagram
 	+sprite(instagram)
@@ -1050,6 +1064,10 @@ a.btn,
 			line-height: 18px
 			white-space: pre-wrap
 
+		&-pagintation
+			width: 44px
+			line-height: 40px
+
 	&_br
 		width: 170px
 		line-height: 33px
@@ -1113,6 +1131,42 @@ a.btn,
 				border: 2px solid #2b639b
 				background: #2b639b
 				color: #fff
+
+		&-active
+			border: 2px solid #371794
+			background: #371794
+
+			&:hover,
+			&:focus
+				color: #371794
+
+			&:visited
+				border: 2px solid #371794
+				background: #371794
+
+				&:hover,
+				&:focus
+					color: #371794
+
+		&-disbled
+			border: 2px solid #839fcc
+			background: #839fcc
+
+			&:hover,
+			&:focus
+				border: 2px solid #839fcc
+				background: #839fcc
+				color: #fff
+
+			&:visited
+				border: 2px solid #839fcc
+				background: #839fcc
+
+				&:hover,
+				&:focus
+					border: 2px solid #839fcc
+					background: #839fcc
+					color: #fff
 
 	&_modal
 		width: auto

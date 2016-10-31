@@ -951,6 +951,23 @@
   text-decoration: none;
 }
 
+.paginatinon-b__list {
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 0;
+}
+
+.pagination-b__item {
+  margin-right: 20px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+}
+.pagination-b__item:last-child {
+  margin-right: 0;
+}
+
 .example-b > div {
   border-bottom: 1px solid #cccccc;
 }
@@ -1537,6 +1554,12 @@ a.btn_square-small,
   line-height: 18px;
   white-space: pre-wrap;
 }
+button.btn_square-pagintation,
+a.btn_square-pagintation,
+.btn_square-pagintation {
+  width: 44px;
+  line-height: 40px;
+}
 button.btn_br,
 a.btn_br,
 .btn_br {
@@ -1628,6 +1651,62 @@ a.btn_blue:visited:active,
 .btn_blue:visited:active {
   border: 2px solid #2b639b;
   background: #2b639b;
+  color: #fff;
+}
+button.btn_blue-active,
+a.btn_blue-active,
+.btn_blue-active {
+  border: 2px solid #371794;
+  background: #371794;
+}
+button.btn_blue-active:hover, button.btn_blue-active:focus,
+a.btn_blue-active:hover,
+a.btn_blue-active:focus,
+.btn_blue-active:hover,
+.btn_blue-active:focus {
+  color: #371794;
+}
+button.btn_blue-active:visited,
+a.btn_blue-active:visited,
+.btn_blue-active:visited {
+  border: 2px solid #371794;
+  background: #371794;
+}
+button.btn_blue-active:visited:hover, button.btn_blue-active:visited:focus,
+a.btn_blue-active:visited:hover,
+a.btn_blue-active:visited:focus,
+.btn_blue-active:visited:hover,
+.btn_blue-active:visited:focus {
+  color: #371794;
+}
+button.btn_blue-disbled,
+a.btn_blue-disbled,
+.btn_blue-disbled {
+  border: 2px solid #839fcc;
+  background: #839fcc;
+}
+button.btn_blue-disbled:hover, button.btn_blue-disbled:focus,
+a.btn_blue-disbled:hover,
+a.btn_blue-disbled:focus,
+.btn_blue-disbled:hover,
+.btn_blue-disbled:focus {
+  border: 2px solid #839fcc;
+  background: #839fcc;
+  color: #fff;
+}
+button.btn_blue-disbled:visited,
+a.btn_blue-disbled:visited,
+.btn_blue-disbled:visited {
+  border: 2px solid #839fcc;
+  background: #839fcc;
+}
+button.btn_blue-disbled:visited:hover, button.btn_blue-disbled:visited:focus,
+a.btn_blue-disbled:visited:hover,
+a.btn_blue-disbled:visited:focus,
+.btn_blue-disbled:visited:hover,
+.btn_blue-disbled:visited:focus {
+  border: 2px solid #839fcc;
+  background: #839fcc;
   color: #fff;
 }
 button.btn_modal,
