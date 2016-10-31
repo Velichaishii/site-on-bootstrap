@@ -1664,7 +1664,9 @@ a.btn_blue-active:hover,
 a.btn_blue-active:focus,
 .btn_blue-active:hover,
 .btn_blue-active:focus {
-  color: #371794;
+  border: 2px solid #371794;
+  background: #371794;
+  color: #fff;
 }
 button.btn_blue-active:visited,
 a.btn_blue-active:visited,
@@ -1677,7 +1679,9 @@ a.btn_blue-active:visited:hover,
 a.btn_blue-active:visited:focus,
 .btn_blue-active:visited:hover,
 .btn_blue-active:visited:focus {
-  color: #371794;
+  border: 2px solid #371794;
+  background: #371794;
+  color: #fff;
 }
 button.btn_blue-disbled,
 a.btn_blue-disbled,
