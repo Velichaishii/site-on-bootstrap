@@ -387,7 +387,7 @@
   -o-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
 }
-.lots-b__link:hover {
+.lots-b__link:hover, .lots-b__link:active, .lots-b__link:focus {
   color: #fff;
   background: #371794;
 }
